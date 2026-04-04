@@ -3,14 +3,173 @@
     {
       "test_id": "T_hybrid_1",
       "requirement_id": "FR_hybrid_1",
-      "scenario": "Save a workout entry without crashing",
+      "scenario": "Verify background persistence during low-memory states",
       "steps": [
-        "Open the workout logging feature",
-        "Enter workout information",
-        "Submit the workout"
+        "Start a sleep tracking session",
+        "Move the app to the background",
+        "Simulate a high-memory usage event via OS developer tools",
+        "Wait for 8 hours of background operation",
+        "Re-open the app"
       ],
-      "expected_result": "The workout is saved successfully and the application does not crash.",
-      "notes": "Revised the expected result to match the updated hybrid requirement."
+      "expected_result": "The session remains active and data logging is continuous without termination.",
+      "notes": "Updated to include a measurable 8-hour background window and specific OS memory simulation."
+    },
+    {
+      "test_id": "T_hybrid_2",
+      "requirement_id": "FR_hybrid_2",
+      "scenario": "Verify data recovery after an unexpected application crash",
+      "steps": [
+        "Start a sleep tracking session and log data for 5 minutes",
+        "Force-close the application to simulate a crash",
+        "Restart the application",
+        "Check for the 'Resume Session' prompt"
+      ],
+      "expected_result": "The session is restored with no more than 60 seconds of missing data.",
+      "notes": "Added a strict 60-second recovery threshold to ensure data integrity."
+    },
+    {
+      "test_id": "T_hybrid_3",
+      "requirement_id": "FR_hybrid_3",
+      "scenario": "Monitor CPU and Thermal levels on legacy hardware",
+      "steps": [
+        "Launch the app on a legacy device (Android 10+ / iOS 14+)",
+        "Initiate an overnight sleep tracking session",
+        "Monitor CPU usage and device temperature periodically"
+      ],
+      "expected_result": "CPU usage remains below 15% and device temperature does not exceed 40°C.",
+      "notes": "Revised to target specific legacy hardware constraints identified in user reviews."
+    },
+    {
+      "test_id": "T_hybrid_4",
+      "requirement_id": "FR_hybrid_4",
+      "scenario": "Verify functionality of the Crash Report diagnostic tool",
+      "steps": [
+        "Trigger a controlled app crash",
+        "Re-open the app",
+        "Select the 'Send Diagnostic Report' button on the prompt"
+      ],
+      "expected_result": "The system successfully transmits a diagnostic log package to the support server.",
+      "notes": "Converted a generic support test into a functional verification of log transmission."
+    },
+    {
+      "test_id": "T_hybrid_5",
+      "requirement_id": "FR_hybrid_5",
+      "scenario": "Verify 'One-Click Cancel' navigation efficiency",
+      "steps": [
+        "Open the main Settings menu",
+        "Navigate to the 'Manage Subscription' section",
+        "Click the 'Cancel' button"
+      ],
+      "expected_result": "The cancellation confirmation screen is reached in exactly two taps from settings.",
+      "notes": "Revised expected result to measure interaction efficiency (two-tap limit)."
+    },
+    {
+      "test_id": "T_hybrid_6",
+      "requirement_id": "FR_hybrid_6",
+      "scenario": "Verify Premium labeling and price disclosure",
+      "steps": [
+        "Open the content library",
+        "Browse to a locked 'Premium' content thumbnail",
+        "Inspect the thumbnail for pricing or tier information"
+      ],
+      "expected_result": "The subscription cost or required tier is clearly visible before the user clicks.",
+      "notes": "Updated to ensure pricing visibility is confirmed before user engagement."
+    },
+    {
+      "test_id": "T_hybrid_7",
+      "requirement_id": "FR_hybrid_7",
+      "scenario": "Verify 48-hour trial conversion notification",
+      "steps": [
+        "Set a trial to expire in exactly 48 hours",
+        "Monitor push notification and email channels",
+        "Verify arrival of the system-triggered event"
+      ],
+      "expected_result": "Both a push notification and an email are received exactly 48 hours before billing.",
+      "notes": "Added multi-channel verification to ensure user awareness of billing cycles."
+    },
+    {
+      "test_id": "T_hybrid_8",
+      "requirement_id": "FR_hybrid_8",
+      "scenario": "Download PDF invoice from Billing History",
+      "steps": [
+        "Navigate to the 'Billing History' tab",
+        "Select a past transaction from the list",
+        "Click the 'Download PDF' icon"
+      ],
+      "expected_result": "A valid PDF invoice is generated and downloaded to local storage.",
+      "notes": "Refined to verify the physical generation and download of the invoice file."
+    },
+    {
+      "test_id": "T_hybrid_9",
+      "requirement_id": "FR_hybrid_9",
+      "scenario": "Verify automated metadata attachment in dispute forms",
+      "steps": [
+        "Select a transaction for dispute",
+        "Open the in-app dispute form",
+        "Submit the form to the support system"
+      ],
+      "expected_result": "The form includes the correct Transaction ID and User ID automatically.",
+      "notes": "Added verification for automated metadata attachment to reduce manual user entry."
+    },
+    {
+      "test_id": "T_hybrid_10",
+      "requirement_id": "FR_hybrid_10",
+      "scenario": "Verify offline playback in Airplane Mode",
+      "steps": [
+        "Download 500MB of meditation tracks",
+        "Enable Airplane Mode (disable all data/Wi-Fi)",
+        "Attempt to play a downloaded track"
+      ],
+      "expected_result": "The track plays immediately without any network-related errors.",
+      "notes": "Specified a 500MB storage limit to match the refined hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_11",
+      "requirement_id": "FR_hybrid_11",
+      "scenario": "Verify independent audio channel mixing",
+      "steps": [
+        "Start a guided meditation session",
+        "Adjust the 'Guide Voice' slider to 0%",
+        "Adjust the 'Background Nature Sounds' slider to 100%"
+      ],
+      "expected_result": "The guide voice is muted while background audio remains audible.",
+      "notes": "Refined steps to test the extreme boundaries (0% vs 100%) of the audio mixer."
+    },
+    {
+      "test_id": "T_hybrid_12",
+      "requirement_id": "FR_hybrid_12",
+      "scenario": "Verify gapless looping in custom sleep playlists",
+      "steps": [
+        "Create a playlist with three separate audio tracks",
+        "Enable the 'Loop' feature",
+        "Observe the transition between track 1 and track 2"
+      ],
+      "expected_result": "The audio transition is seamless with no audible pops or gaps.",
+      "notes": "Added a qualitative check for gapless playback to improve the user experience."
+    },
+    {
+      "test_id": "T_hybrid_13",
+      "requirement_id": "FR_hybrid_13",
+      "scenario": "Verify Health API sync latency",
+      "steps": [
+        "Complete a 10-minute sleep session",
+        "Terminate the session",
+        "Immediately open the external health app"
+      ],
+      "expected_result": "The session data appears in the health app within 10 seconds of completion.",
+      "notes": "Added a strict 10-second latency check for external API synchronization."
+    },
+    {
+      "test_id": "T_hybrid_14",
+      "requirement_id": "FR_hybrid_14",
+      "scenario": "Verify CSV data export structure",
+      "steps": [
+        "Navigate to the 'Data Export' section",
+        "Generate a CSV export of historical trends",
+        "Open the file to verify columns"
+      ],
+      "expected_result": "The CSV contains Date, Start Time, End Time, and Quality Score columns.",
+      "notes": "Refined expected result to specify the exact schema required for the data export."
     }
   ]
 }

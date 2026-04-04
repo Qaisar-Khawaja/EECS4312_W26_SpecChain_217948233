@@ -1,16 +1,342 @@
-
 {
   "tests": [
     {
-      "test_id": "T_auto_1",
+      "test_id": "T_man_1_1",
       "requirement_id": "FR1",
-      "scenario": "Workout Logging Stability",
+      "scenario": "Restore Purchase Success Path",
       "steps": [
-        "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
+        "Login with an account that has an active Play Store receipt but shows 'Free' in-app",
+        "Navigate to Settings > Account",
+        "Tap 'Restore Purchase' button"
       ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
+      "expected_result": "App successfully validates the receipt with the store and upgrades account status to Premium immediately."
+    },
+    {
+      "test_id": "T_man_1_2",
+      "requirement_id": "FR1",
+      "scenario": "Restore Purchase with No Valid Receipt",
+      "steps": [
+        "Login with a truly free account (no store receipt)",
+        "Navigate to Settings > Account",
+        "Tap 'Restore Purchase' button"
+      ],
+      "expected_result": "App displays a clear message stating 'No active subscription found' without crashing or looping."
+    },
+    {
+      "test_id": "T_man_2_1",
+      "requirement_id": "FR2",
+      "scenario": "Persistence After App Update",
+      "steps": [
+        "Ensure user is logged in on Version 1.0",
+        "Install Version 1.1 update over the existing app",
+        "Launch the application"
+      ],
+      "expected_result": "The user remains logged in and the home screen loads their personalized content without a login prompt."
+    },
+    {
+      "test_id": "T_man_2_2",
+      "requirement_id": "FR2",
+      "scenario": "Token Validity After Password Change",
+      "steps": [
+        "Log in on Device A",
+        "Change the account password on Device B (Web)",
+        "Open the app on Device A"
+      ],
+      "expected_result": "The app identifies the invalid token and redirects the user to the login screen instead of entering a loop."
+    },
+    {
+      "test_id": "T_man_3_1",
+      "requirement_id": "FR3",
+      "scenario": "Lock Icon Visibility for Free Users",
+      "steps": [
+        "Login as a Free Tier user",
+        "Navigate to the 'Sleep' category",
+        "Observe the session thumbnails"
+      ],
+      "expected_result": "All subscription-only Sleepcasts display a visible Lock icon overlay on the thumbnail."
+    },
+    {
+      "test_id": "T_man_3_2",
+      "requirement_id": "FR3",
+      "scenario": "Lock Icon Absence for Premium Users",
+      "steps": [
+        "Login as a Premium Tier user",
+        "Navigate to the 'Sleep' category",
+        "Observe the session thumbnails"
+      ],
+      "expected_result": "No Lock icons are visible on the thumbnails, indicating all content is accessible."
+    },
+    {
+      "test_id": "T_man_4_1",
+      "requirement_id": "FR4",
+      "scenario": "Applying Free Content Filter",
+      "steps": [
+        "Navigate to 'Explore' tab",
+        "Open Filter menu and select 'Free Sessions'",
+        "Apply filters"
+      ],
+      "expected_result": "The resulting list contains only sessions that do not require a subscription to play."
+    },
+    {
+      "test_id": "T_man_4_2",
+      "requirement_id": "FR4",
+      "scenario": "Empty Results for Free Filter",
+      "steps": [
+        "Search for a hyper-specific keyword like 'Advanced Vedic Mastery'",
+        "Apply the 'Free Sessions' filter"
+      ],
+      "expected_result": "The app displays a 'No free sessions found' message rather than showing paid results."
+    },
+    {
+      "test_id": "T_man_5_1",
+      "requirement_id": "FR5",
+      "scenario": "Audio Playback with Screen Locked",
+      "steps": [
+        "Start a 30-minute meditation session",
+        "Press the device power button to lock the screen",
+        "Wait for 5 minutes"
+      ],
+      "expected_result": "Audio playback continues steadily without the OS killing the background process."
+    },
+    {
+      "test_id": "T_man_5_2",
+      "requirement_id": "FR5",
+      "scenario": "Audio Persistence During Incoming Call",
+      "steps": [
+        "Start a Sleepcast session",
+        "Simulate an incoming phone call",
+        "Decline the call"
+      ],
+      "expected_result": "The audio pauses during the ring and automatically resumes playback immediately after the call is declined."
+    },
+    {
+      "test_id": "T_man_6_1",
+      "requirement_id": "FR6",
+      "scenario": "Offline Playback in Airplane Mode",
+      "steps": [
+        "Download a 10-minute session to local storage",
+        "Enable Airplane Mode (kill all connectivity)",
+        "Attempt to play the downloaded session"
+      ],
+      "expected_result": "The audio plays successfully without a 'No Connection' error popup."
+    },
+    {
+      "test_id": "T_man_6_2",
+      "requirement_id": "FR6",
+      "scenario": "Incomplete Download Playback Attempt",
+      "steps": [
+        "Start a download and cancel it at 10%",
+        "Enable Airplane Mode",
+        "Attempt to play that specific session"
+      ],
+      "expected_result": "The app provides a clear message that the file is incomplete and requires internet to finish."
+    },
+    {
+      "test_id": "T_man_7_1",
+      "requirement_id": "FR7",
+      "scenario": "Activating Minimalist Mode",
+      "steps": [
+        "Navigate to Settings > Appearance",
+        "Toggle 'Minimalist Home' to ON",
+        "Return to the Home Screen"
+      ],
+      "expected_result": "Promotional banners and the 'Community' tab are hidden; the UI is clean and focused."
+    },
+    {
+      "test_id": "T_man_7_2",
+      "requirement_id": "FR7",
+      "scenario": "Minimalist Mode UI Consistency",
+      "steps": [
+        "Enable Minimalist Mode",
+        "Restart the application"
+      ],
+      "expected_result": "The Minimalist UI state persists across app restarts without reverting to the default cluttered view."
+    },
+    {
+      "test_id": "T_man_8_1",
+      "requirement_id": "FR8",
+      "scenario": "Shortcut Access to Core Features",
+      "steps": [
+        "Launch app from a 'cold start'",
+        "Count taps required to reach the 'Breathing' timer start button"
+      ],
+      "expected_result": "The user reaches the start button in exactly 2 taps."
+    },
+    {
+      "test_id": "T_man_8_2",
+      "requirement_id": "FR8",
+      "scenario": "Home Screen Customization Taps",
+      "steps": [
+        "Pin 'Favorite Course' to the bottom navigation bar",
+        "Launch app and tap the new pinned icon"
+      ],
+      "expected_result": "The user enters their specific course in exactly 1 tap from the home screen."
+    },
+    {
+      "test_id": "T_man_9_1",
+      "requirement_id": "FR9",
+      "scenario": "Offline Streak Increment",
+      "steps": [
+        "Disable internet connectivity",
+        "Complete a full meditation session",
+        "Observe the local streak counter"
+      ],
+      "expected_result": "The local streak counter increments by 1 immediately after session completion while still offline."
+    },
+    {
+      "test_id": "T_man_9_2",
+      "requirement_id": "FR9",
+      "scenario": "Streak Sync After Reconnection",
+      "steps": [
+        "Complete session offline (incrementing local streak)",
+        "Enable internet connectivity",
+        "Allow app to sync with server"
+      ],
+      "expected_result": "The server-side streak updates to match the local count without resetting to zero."
+    },
+    {
+      "test_id": "T_man_10_1",
+      "requirement_id": "FR10",
+      "scenario": "Switching to Legacy Voice",
+      "steps": [
+        "Open the 'Basics' course (which has an updated narrator)",
+        "Open Course Settings",
+        "Select 'Original Narrator'"
+      ],
+      "expected_result": "The audio player loads the original voice files instead of the new updated version."
+    },
+    {
+      "test_id": "T_man_10_2",
+      "requirement_id": "FR10",
+      "scenario": "Voice Preference Persistence",
+      "steps": [
+        "Set preference to 'Original Narrator'",
+        "Close app and open a different course module"
+      ],
+      "expected_result": "The app maintains the 'Original Narrator' choice for all modules within that course."
+    },
+    {
+      "test_id": "T_man_11_1",
+      "requirement_id": "FR11",
+      "scenario": "Automatic 5xx Failover Trigger",
+      "steps": [
+        "Simulate a 500 Internal Server Error from the API",
+        "Launch the application"
+      ],
+      "expected_result": "The app bypasses the main loading screen and automatically displays the 'Emergency Offline' menu with cached sessions."
+    },
+    {
+      "test_id": "T_man_11_2",
+      "requirement_id": "FR11",
+      "scenario": "Emergency Mode Cache Loading",
+      "steps": [
+        "Trigger Emergency Offline Mode via simulated 503 error",
+        "Select one of the 'Last 3 Played' sessions"
+      ],
+      "expected_result": "The session plays immediately using local data without attempting to contact the broken server."
+    },
+    {
+      "test_id": "T_man_12_1",
+      "requirement_id": "FR12",
+      "scenario": "System Dark Mode Synchronization",
+      "steps": [
+        "Set Android/iOS system theme to 'Dark'",
+        "Launch the Headspace app"
+      ],
+      "expected_result": "The app UI automatically adopts the dark theme (#000000 or dark grey backgrounds) to match the system."
+    },
+    {
+      "test_id": "T_man_12_2",
+      "requirement_id": "FR12",
+      "scenario": "Manual Dark Mode Toggle",
+      "steps": [
+        "Navigate to App Settings",
+        "Manually toggle 'Dark Mode' to ON while system is in Light Mode"
+      ],
+      "expected_result": "The app interface switches to the dark theme regardless of the global system setting."
+    },
+    {
+      "test_id": "T_man_13_1",
+      "requirement_id": "FR13",
+      "scenario": "Recovery Prompt After App Crash",
+      "steps": [
+        "Force-close the app during an active meditation session",
+        "Re-open the application"
+      ],
+      "expected_result": "A 'Session Recovery' prompt appears asking if the user finished their meditation to save their streak."
+    },
+    {
+      "test_id": "T_man_13_2",
+      "requirement_id": "FR13",
+      "scenario": "Manual Activity Log Entry",
+      "steps": [
+        "Complete a session that failed to sync",
+        "Navigate to Profile > History",
+        "Tap 'Manually Verify Last Session'"
+      ],
+      "expected_result": "The session is added to the user's history and the daily streak is updated."
+    },
+    {
+      "test_id": "T_man_14_1",
+      "requirement_id": "FR14",
+      "scenario": "Pre-Download Storage Validation",
+      "steps": [
+        "Select a course for download",
+        "Click the 'Download' icon"
+      ],
+      "expected_result": "A confirmation pop-up displays the course size (e.g., '145MB') and the user's available device storage."
+    },
+    {
+      "test_id": "T_man_14_2",
+      "requirement_id": "FR14",
+      "scenario": "Insufficient Storage Warning",
+      "steps": [
+        "Fill device storage until only 50MB remains",
+        "Attempt to download a 200MB course"
+      ],
+      "expected_result": "The app prevents the download and displays an error: 'Insufficient storage space to download this course'."
+    },
+    {
+      "test_id": "T_man_E1",
+      "requirement_id": "FR5",
+      "scenario": "Extreme Battery Saver Interference",
+      "steps": [
+        "Enable 'Extreme Battery Saver' mode on the device (which usually kills all background activity)",
+        "Start a 45-minute Sleepcast",
+        "Lock the screen and wait for 10 minutes"
+      ],
+      "expected_result": "The app's Foreground Service overrides the OS battery restriction, and audio continues playing uninterrupted."
+    },
+    {
+      "test_id": "T_man_E2",
+      "requirement_id": "FR9",
+      "scenario": "Clock Skew Streak Validation",
+      "steps": [
+        "Complete a session while offline",
+        "Manually change the device system date to 2 days in the past",
+        "Re-enable internet and allow the app to sync"
+      ],
+      "expected_result": "The system identifies the timestamp mismatch and uses the 'Session End' server-time metadata to prevent streak corruption or 'time-travel' cheating."
+    },
+    {
+      "test_id": "T_man_E3",
+      "requirement_id": "FR6",
+      "scenario": "Storage Wipe during Offline Playback",
+      "steps": [
+        "Begin playing a 100% downloaded session in Airplane Mode",
+        "While audio is playing, use a system cleaner or external file manager to delete the app's 'Downloads' folder"
+      ],
+      "expected_result": "The app handles the sudden file loss gracefully with an error message ('File missing, please reconnect') instead of crashing or freezing."
+    },
+    {
+      "test_id": "T_man_E4",
+      "requirement_id": "FR1",
+      "scenario": "Cross-Platform Subscription Conflict",
+      "steps": [
+        "Login with an account that has an expired iOS subscription but a new, active Android Play Store subscription",
+        "Tap 'Restore Purchase' on the Android device"
+      ],
+      "expected_result": "The system prioritizes the most recent active receipt and updates the account to Premium, ignoring the expired legacy receipt."
     }
   ]
 }

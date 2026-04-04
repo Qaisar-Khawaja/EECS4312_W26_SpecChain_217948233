@@ -1,13 +1,62 @@
-{  "groups": [
+{
+  "groups": [
     {
       "group_id": "H1",
-      "theme": "Workout logging failures during activity tracking",
-      "review_ids": ["rev_12", "rev_33", "rev_41", "rev_92"],
-      "example_reviews": [
-        "The app crashes whenever I try to log a run.",
-        "Logging workouts causes the app to freeze."
+      "theme": "System Stability & Performance Failures",
+      "review_ids": [
+        "0aca4c0a-6bf5-4415-9b9f-939607f0e8a7",
+        "362dda58-6651-4abb-9716-af451daf05f2",
+        "a60c457b-a794-4e57-bb37-bd4f37947e9a",
+        "7c964501-c8e5-4ead-8654-5fb48d43b739"
       ],
-      "notes": "Removed one unrelated review about login problems from the original automated group."
+      "example_reviews": [
+        "App crashes and glitches during sleep sessions.",
+        "Experiencing issues on various devices including old and new phones."
+      ],
+      "notes": "Refined T1 by narrowing the focus to high-impact stability failures; moved minor UI alignment complaints to a separate internal log."
+    },
+    {
+      "group_id": "H2",
+      "theme": "Subscription Transparency & Billing UX",
+      "review_ids": [
+        "c495cc99-e06b-4e6f-a3a5-15caa838bbc2",
+        "73ccf8ba-6da4-49d5-9e91-9e41b618657d",
+        "92e6571b-f5b5-47a5-bc2b-020b1300bd21",
+        "f99c20b3-d270-4da4-bee5-487339566206"
+      ],
+      "example_reviews": [
+        "Difficulty in canceling subscriptions and inability to get refunds.",
+        "Frustration with paywalls limiting access to basic content."
+      ],
+      "notes": "Merged T2 and T5; human review identified that users perceive billing errors and paywall intrusiveness as a single monetization frustration."
+    },
+    {
+      "group_id": "H3",
+      "theme": "Offline Accessibility & Content Customization",
+      "review_ids": [
+        "c7eabb0e-384b-4fb2-a1fa-9f9a38d81c1d",
+        "10bea72d-92c3-4158-8042-70093025cd61",
+        "8b86c8c1-41de-425d-ae01-286e273df035"
+      ],
+      "example_reviews": [
+        "Difficulty accessing content offline.",
+        "Limited control over content preferences and personalized relaxation."
+      ],
+      "notes": "Renamed 'Feature Requests' (T3) to a more specific functional theme focused on offline utility and user-driven customization."
+    },
+    {
+      "group_id": "H4",
+      "theme": "Value Perception & Premium Paywalls",
+      "review_ids": [
+        "ade55c6f-a624-4e08-b871-2e85c70524cb",
+        "e27949ae-febb-4711-a854-59f852c90d49",
+        "0b152b74-eb46-4732-b985-7e80105ca1c9"
+      ],
+      "example_reviews": [
+        "Intrusive paywalls and subscription requirements.",
+        "Limited access to valuable content without payment."
+      ],
+      "notes": "Refined T4 to specifically address the 'Price-to-Value' discrepancy reported by health enthusiasts rather than general content feedback."
     }
   ]
 }

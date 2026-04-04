@@ -1,12 +1,9 @@
 {
   "pipeline": "hybrid",
-  "dataset_size": 300,
-  "persona_count": 4,
-  "requirements_count": 8,
-  "tests_count": 9,
-  "traceability_links": 12,
-  "review_coverage": 0.67,
-  "traceability_ratio": 0.88,
-  "testability_rate": 0.87, 
-  "ambiguity_ratio": 0.12
+  "persona_count": 3,
+  "requirements_count": 14,
+  "tests_count": 14,
+  "review_coverage": 0.003,
+  "traceability_ratio": 1.0,
+  "testability_rate": 1.0
 }

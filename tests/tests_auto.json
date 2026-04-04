@@ -3,13 +3,246 @@
     {
       "test_id": "T_auto_1",
       "requirement_id": "FR_auto_1",
-      "scenario": "Logging a workout without crashing",
+      "scenario": "The user sets a sleep schedule and receives reminders",
       "steps": [
-        "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
+        "Set a sleep schedule",
+        "Verify reminders are sent 30 minutes before bedtime and wake-up time"
       ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
+      "expected_result": "Reminders are sent 30 minutes before bedtime and wake-up time"
+    },
+    {
+      "test_id": "T_auto_2",
+      "requirement_id": "FR_auto_2",
+      "scenario": "The user views their sleep report",
+      "steps": [
+        "Use the system for at least 7 days",
+        "View sleep report",
+        "Verify report displays average sleep duration, sleep stages, and time spent awake"
+      ],
+      "expected_result": "Report displays average sleep duration, sleep stages, and time spent awake"
+    },
+    {
+      "test_id": "T_auto_3",
+      "requirement_id": "FR_auto_3",
+      "scenario": "The user uses the white noise generator",
+      "steps": [
+        "Access white noise generator",
+        "Select a white noise option",
+        "Verify continuous soothing sound is played"
+      ],
+      "expected_result": "Continuous soothing sound is played"
+    },
+    {
+      "test_id": "T_auto_4",
+      "requirement_id": "FR_auto_4",
+      "scenario": "The user uses the smart alarm",
+      "steps": [
+        "Enable smart alarm",
+        "Verify wake-up time is within a 30-minute window of desired wake-up time"
+      ],
+      "expected_result": "Wake-up time is within a 30-minute window of desired wake-up time"
+    },
+    {
+      "test_id": "T_auto_5",
+      "requirement_id": "FR_auto_5",
+      "scenario": "The user integrates with popular sleep and relaxation apps",
+      "steps": [
+        "Connect accounts to system",
+        "View sleep data",
+        "Verify information from integrated apps is displayed"
+      ],
+      "expected_result": "Information from integrated apps is displayed"
+    },
+    {
+      "test_id": "T_auto_6",
+      "requirement_id": "FR_auto_6",
+      "scenario": "The user receives a daily summary of sleep data",
+      "steps": [
+        "Use system for at least 1 day",
+        "View daily summary",
+        "Verify sleep data, quality, and suggestions for improvement are displayed"
+      ],
+      "expected_result": "Sleep data, quality, and suggestions for improvement are displayed"
+    },
+    {
+      "test_id": "T_auto_7",
+      "requirement_id": "FR_auto_7",
+      "scenario": "The user sets reminders for relaxing activities",
+      "steps": [
+        "Set reminder for relaxing activity",
+        "Verify reminder is sent 30 minutes before bedtime"
+      ],
+      "expected_result": "Reminder is sent 30 minutes before bedtime"
+    },
+    {
+      "test_id": "T_auto_8",
+      "requirement_id": "FR_auto_8",
+      "scenario": "The user accesses guided meditations and relaxation techniques",
+      "steps": [
+        "Access library",
+        "Select meditation or relaxation technique",
+        "Verify guided audio recording is played"
+      ],
+      "expected_result": "Guided audio recording is played"
+    },
+    {
+      "test_id": "T_auto_9",
+      "requirement_id": "FR_auto_9",
+      "scenario": "The user tracks environmental factors",
+      "steps": [
+        "Enable environmental tracking",
+        "View sleep data",
+        "Verify information on environmental factors is displayed"
+      ],
+      "expected_result": "Information on environmental factors is displayed"
+    },
+    {
+      "test_id": "T_auto_10",
+      "requirement_id": "FR_auto_10",
+      "scenario": "The user sets and tracks goals for improving sleep quality",
+      "steps": [
+        "Set sleep goal",
+        "View progress",
+        "Verify progress towards achieving goal is displayed"
+      ],
+      "expected_result": "Progress towards achieving goal is displayed"
+    },
+    {
+      "test_id": "T_auto_11",
+      "requirement_id": "FR_auto_2",
+      "scenario": "The user views past payment history",
+      "steps": [
+        "Log in",
+        "Navigate to account history section",
+        "Verify list of payments made in last 12 months is displayed"
+      ],
+      "expected_result": "List of payments made in last 12 months is displayed"
+    },
+    {
+      "test_id": "T_auto_12",
+      "requirement_id": "FR_auto_3",
+      "scenario": "The user sets up automatic recurring payments",
+      "steps": [
+        "Have scheduled bill",
+        "Opt to set up automatic recurring payments",
+        "Verify frequency can be chosen and setup is confirmed"
+      ],
+      "expected_result": "Frequency can be chosen and setup is confirmed"
+    },
+    {
+      "test_id": "T_auto_13",
+      "requirement_id": "FR_auto_4",
+      "scenario": "The user receives reminders for upcoming bill due dates",
+      "steps": [
+        "Have upcoming bill due",
+        "Verify reminder notification is sent to preferred communication method"
+      ],
+      "expected_result": "Reminder notification is sent to preferred communication method"
+    },
+    {
+      "test_id": "T_auto_14",
+      "requirement_id": "FR_auto_5",
+      "scenario": "The user updates payment information",
+      "steps": [
+        "Have outdated payment information",
+        "Attempt to make payment",
+        "Verify prompt to update payment information is displayed"
+      ],
+      "expected_result": "Prompt to update payment information is displayed"
+    },
+    {
+      "test_id": "T_auto_15",
+      "requirement_id": "FR_auto_6",
+      "scenario": "The user views bill details",
+      "steps": [
+        "View bill details",
+        "Verify due date, amount, and payment instructions are displayed clearly"
+      ],
+      "expected_result": "Due date, amount, and payment instructions are displayed clearly"
+    },
+    {
+      "test_id": "T_auto_16",
+      "requirement_id": "FR_auto_7",
+      "scenario": "The user tracks payment status",
+      "steps": [
+        "Make payment",
+        "Check payment status",
+        "Verify updated status is displayed"
+      ],
+      "expected_result": "Updated status is displayed"
+    },
+    {
+      "test_id": "T_auto_17",
+      "requirement_id": "FR_auto_8",
+      "scenario": "The user makes a payment",
+      "steps": [
+        "Initiate payment",
+        "Verify payment information is encrypted and confirmation is received"
+      ],
+      "expected_result": "Payment information is encrypted and confirmation is received"
+    },
+    {
+      "test_id": "T_auto_18",
+      "requirement_id": "FR_auto_9",
+      "scenario": "The user views and manages scheduled payments",
+      "steps": [
+        "Have scheduled payments",
+        "Review scheduled payments",
+        "Verify list of upcoming payments is displayed and can be modified or canceled"
+      ],
+      "expected_result": "List of upcoming payments is displayed and can be modified or canceled"
+    },
+    {
+      "test_id": "T_auto_19",
+      "requirement_id": "FR_auto_10",
+      "scenario": "The user views payment fees or charges",
+      "steps": [
+        "Review payment details",
+        "Verify any applicable fees or charges are displayed clearly"
+      ],
+      "expected_result": "Any applicable fees or charges are displayed clearly"
+    },
+    {
+      "test_id": "T_auto_20",
+      "requirement_id": "FR_auto_3",
+      "scenario": "The user uses guided meditation",
+      "steps": [
+        "Access meditation feature",
+        "Select meditation session",
+        "Verify session plays without interruption"
+      ],
+      "expected_result": "Session plays without interruption"
+    },
+    {
+      "test_id": "T_auto_21",
+      "requirement_id": "FR_auto_4",
+      "scenario": "The user customizes meditation experience",
+      "steps": [
+        "Choose session length and type",
+        "Verify session matches selections"
+      ],
+      "expected_result": "Session matches selections"
+    },
+    {
+      "test_id": "T_auto_22",
+      "requirement_id": "FR_auto_5",
+      "scenario": "The user enables ambient sounds or visuals",
+      "steps": [
+        "Choose to enable ambient sounds or visuals",
+        "Verify calming sounds or visuals are played or displayed"
+      ],
+      "expected_result": "Calming sounds or visuals are played or displayed"
+    },
+    {
+      "test_id": "T_auto_23",
+      "requirement_id": "FR_auto_6",
+      "scenario": "The user tracks meditation progress",
+      "steps": [
+        "Complete meditation session",
+        "View meditation history",
+        "Verify date, time, and duration of session are displayed"
+      ],
+      "expected_result": "Date, time, and duration of session are displayed"
     }
   ]
 }

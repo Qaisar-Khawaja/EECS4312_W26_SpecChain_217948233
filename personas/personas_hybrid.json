@@ -1,31 +1,58 @@
 {
   "personas": [
     {
-      "id": "P_hybrid_1",
-      "name": "Frequent Fitness Logger",
-      "description": "A user who depends on the app for regular workout tracking and expects logging to work reliably during or immediately after exercise.",
+      "id": "PH1",
+      "name": "Stability-Driven Tracker",
+      "description": "A long-term user who relies on the app for daily health monitoring but is losing trust due to critical system failures and crashes during active use.",
       "derived_from_group": "H1",
       "goals": [
-        "Log workouts quickly",
-        "Track activities without interruption"
+        "Maintain a continuous, uninterrupted data log for sleep and activity.",
+        "Rely on the app across multiple hardware generations without stability loss."
       ],
       "pain_points": [
-        "The app crashes while saving workouts",
-        "Previously entered activity data may disappear"
+        "System crashes that result in lost session data.",
+        "App freezing during high-CPU tasks like sleep tracking."
       ],
-      "context": [
-        "Using the app during exercise sessions",
-        "Using the app outdoors or while moving"
+      "context": "Has used the app for over a year and recently upgraded hardware, yet still experiences legacy stability issues.",
+      "constraints": "Requires high reliability for health management; lacks the technical patience for manual data recovery.",
+      "evidence_reviews": ["0aca4c0a-6bf5-4415-9b9f-939607f0e8a7", "362dda58-6651-4abb-9716-af451daf05f2"],
+      "notes": "Refined P1 to focus strictly on technical stability rather than general UI 'glitches'."
+    },
+    {
+      "id": "PH2",
+      "name": "Transparency-Focused Subscriber",
+      "description": "A user who is willing to pay for value but feels trapped by 'dark patterns' in subscription management and unclear billing cycles.",
+      "derived_from_group": "H2",
+      "goals": [
+        "Easily manage, pause, or cancel subscriptions without support intervention.",
+        "Receive clear, upfront notification of charges and refund policies."
       ],
-      "constraints": [
-        "Workout logging must complete without crashing",
-        "Saved workout data must persist"
+      "pain_points": [
+        "Intrusive paywalls that interrupt the core user flow.",
+        "Difficulty navigating the cancellation process within the app."
       ],
-      "evidence_reviews": [
-        "rev_12",
-        "rev_41"
+      "context": "Price-conscious and skeptical of 'free-to-play' models that hide core features behind a paywall.",
+      "constraints": "Financial sensitivity; limited time to spend on customer support disputes.",
+      "evidence_reviews": ["c495cc99-e06b-4e6f-a3a5-15caa838bbc2", "73ccf8ba-6da4-49d5-9e91-9e41b618657d"],
+      "notes": "Merged P2 and P5 to address the unified frustration with monetization and billing transparency."
+    },
+    {
+      "id": "PH3",
+      "name": "Offline Relaxation Seeker",
+      "description": "A user who values the app for its meditation content but finds it unusable in low-connectivity environments.",
+      "derived_from_group": "H3",
+      "goals": [
+        "Access high-quality relaxation content while traveling or offline.",
+        "Customize audio environments with specific nature sounds and music."
       ],
-      "notes": "Refined the persona description and removed an unsupported assumption about synchronization."
+      "pain_points": [
+        "Inability to play downloaded content without an active data connection.",
+        "Limited granular control over session audio layers."
+      ],
+      "context": "Frequently uses the app in environments like airplanes or remote areas to manage stress.",
+      "constraints": "Limited data bandwidth; prefers a 'set it and forget it' offline experience.",
+      "evidence_reviews": ["c7eabb0e-384b-4fb2-a1fa-9f9a38d81c1d", "10bea72d-92c3-4158-8042-70093025cd61"],
+      "notes": "Renamed P3 and added specific context regarding offline accessibility identified in the hybrid grouping."
     }
   ]
 }

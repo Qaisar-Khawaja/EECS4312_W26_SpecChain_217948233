@@ -1,0 +1,24 @@
+{
+  "app_name": "Headspace: Mindful Meditation",
+  "package_id": "com.getsomeheadspace.android",
+  "dataset_size": {
+    "raw_reviews": 5000,
+    "cleaned_reviews": 4526
+  },
+  "collection_method": "Scraped via the google-play-scraper Python library using the reviews_all() function for the 'US' country and 'en' language.",
+  
+  "cleaning_decisions": {
+    "duplicate_removal": "Removed exact duplicate reviews based on text content",
+    "empty_removal": "Removed reviews with empty or null text",
+    "short_review_threshold": "Removed reviews shorter than 10 characters",
+    "emoji_removal": "Removed all Unicode emojis",
+    "special_characters": "Removed all non-alphanumeric characters except spaces",
+    "number_handling": "Converted common numbers (0-10) to text, removed others",
+    "case_normalization": "Converted all text to lowercase",
+    "whitespace": "Normalized multiple spaces to single space",
+    "stopwords": "Removed English stop words using NLTK stopwords corpus",
+    "lemmatization": "Applied WordNet lemmatization to all tokens",
+    "minimum_cleaned_length": "Required at least 3 words after cleaning"
+},
+  "date_collected": "2026-04-02"
+}

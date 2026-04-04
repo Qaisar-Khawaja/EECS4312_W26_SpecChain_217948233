@@ -1,0 +1,158 @@
+{
+  "personas": [
+    {
+      "id": "P1",
+      "name": "Frustrated Sleeper",
+      "description": "A person who uses a sleep and meditation app to manage anxiety and improve sleep quality, but is experiencing frustrating UI glitches that disrupt their experience.",
+      "derived_from_group": "T1",
+      "goals": [
+        "To effectively manage anxiety and improve sleep quality using the app",
+        "To have a seamless and glitch-free experience while using the app"
+      ],
+      "pain_points": [
+        "The app crashes or freezes during sleep sessions",
+        "The app's UI is glitchy or unresponsive",
+        "The app's performance issues are causing frustration and anxiety"
+      ],
+      "context": [
+        "Using the app on a mobile device",
+        "Experiencing technical issues despite having a stable internet connection and a recent device",
+        "Valuing the app's benefits for anxiety management and sleep quality"
+      ],
+      "constraints": [
+        "Limited technical expertise to troubleshoot issues",
+        "Emotional investment in the app's effectiveness for their well-being"
+      ],
+      "evidence_reviews": [
+        "0aca4c0a-6bf5-4415-9b9f-939607f0e8a7",
+        "362dda58-6651-4abb-9716-af451daf05f2",
+        "a60c457b-a794-4e57-bb37-bd4f37947e9a"
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "Frustrated Bill Payer",
+      "description": "A person who experiences difficulties with billing and subscription management, leading to frustration and stress.",
+      "derived_from_group": "T2",
+      "goals": [
+        "To easily manage their subscriptions and avoid unexpected charges",
+        "To get help and support when experiencing billing issues",
+        "To trust the app and its billing processes"
+      ],
+      "pain_points": [
+        "Difficulty with canceling subscriptions",
+        "Unexpected charges and poor refund policies",
+        "Lack of support and communication from the app",
+        "Stress and frustration caused by billing issues"
+      ],
+      "context": [
+        "Users who have experienced issues with free trials and subscription cancellations",
+        "Users who have had to deal with unhelpful customer support",
+        "Users who are concerned about data security and trust"
+      ],
+      "constraints": [
+        "Limited technical expertise",
+        "Time constraints and busy schedules",
+        "Financial constraints and concerns about value for money"
+      ],
+      "evidence_reviews": [
+        "c495cc99-e06b-4e6f-a3a5-15caa838bbc2",
+        "7a067af7-eae9-4ebb-a77a-06d6a82db27d",
+        "f99c20b3-d270-4da4-bee5-487339566206"
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "Relaxation Seeker",
+      "description": "A person seeking relaxation and sleep assistance through a mobile app",
+      "derived_from_group": "T3",
+      "goals": [
+        "Improve sleep quality",
+        "Relax and reduce stress",
+        "Access soothing content easily"
+      ],
+      "pain_points": [
+        "Difficulty accessing content offline",
+        "Limited control over content filtering",
+        "Inability to download content for offline use",
+        "Lack of personalized features",
+        "Unrealistic expectations for therapy sessions"
+      ],
+      "context": [
+        "Uses mobile app for relaxation and sleep",
+        "Values ease of use and accessibility",
+        "May have limited internet connectivity"
+      ],
+      "constraints": [
+        "Limited time for relaxation",
+        "May have specific preferences for narrators or content types",
+        "May need to use app offline"
+      ],
+      "evidence_reviews": [
+        "c7eabb0e-384b-4fb2-a1fa-9f9a38d81c1d",
+        "10bea72d-92c3-4158-8042-70093025cd61",
+        "8b86c8c1-41de-425d-ae01-286e273df035"
+      ]
+    },
+    {
+      "id": "P4",
+      "name": "Frustrated User",
+      "description": "A loyal user of the meditation app who is experiencing performance issues, leading to frustration and disappointment.",
+      "derived_from_group": "T4",
+      "goals": [
+        "To use the app effectively for meditation and mental well-being",
+        "To have a seamless and uninterrupted user experience"
+      ],
+      "pain_points": [
+        "Frequent crashes and errors",
+        "Slow loading times",
+        "Inability to access sessions or complete meditations",
+        "Poor user experience due to performance issues"
+      ],
+      "context": [
+        "Daily user of the app",
+        "Long-term user with a history of benefiting from the app",
+        "Emotionally invested in using the app for mental health"
+      ],
+      "constraints": [
+        "Limited technical expertise to troubleshoot issues",
+        "Emotional reliance on the app for mental well-being"
+      ],
+      "evidence_reviews": [
+        "82f630f4-552b-44bf-86d8-4b2825ea0cca",
+        "ade55c6f-a624-4e08-b871-2e85c70524cb",
+        "2657aa74-a9d2-493b-b926-5ba27b36aaf7"
+      ]
+    },
+    {
+      "id": "P5",
+      "name": "Frustrated Mindfulness Seeker",
+      "description": "A individual seeking mindfulness and meditation content, frustrated with app performance and value",
+      "derived_from_group": "T5",
+      "goals": [
+        "Achieve mindfulness and reduce stress",
+        "Get value from meditation app subscription"
+      ],
+      "pain_points": [
+        "App crashes and loading issues",
+        "Content not accessible due to paywall",
+        "Lack of value for the subscription cost"
+      ],
+      "context": [
+        "Daily meditation practice",
+        "High expectations for app performance and content",
+        "Willingness to pay for valuable content"
+      ],
+      "constraints": [
+        "Limited time for meditation",
+        "Frustration with technical issues",
+        "Budget constraints for subscription services"
+      ],
+      "evidence_reviews": [
+        "a473d694-5688-4f59-a859-51601a28ff18",
+        "6d75d385-ef43-4663-ae51-369fe705a24a",
+        "27e469df-b940-4a20-8bd3-d437b63dc1db"
+      ]
+    }
+  ]
+}

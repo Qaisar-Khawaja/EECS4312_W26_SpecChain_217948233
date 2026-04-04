@@ -2,11 +2,103 @@
   "groups": [
     {
       "group_id": "G1",
-      "theme": "App crashes during activity logging, THIS IS A AN EXAMPLE, PLEASE REMOVE ",
-      "review_ids": ["rev_12", "rev_33", "rev_45", "rev_89"],
+      "theme": "Subscription Sync & Login Loops",
+      "review_ids": [
+        "82f630f4-552b-44bf-86d8-4b2825ea0cca",
+        "15fe4b34-503e-4209-905f-1ebf4f5af7e7",
+        "c495cc99-e06b-4e6f-a3a5-15caa838bbc2",
+        "cd8c6375-a9e0-4140-957a-25fbf4096829",
+        "c171fe6e-2534-417a-92c9-731ec3febdfa",
+        "25fc9cf6-4b89-4665-bb0b-9e9a758f337f",
+        "3dde7f59-d44f-40ba-9501-ab3a7de6f69d",
+        "0118ff10-6eae-49be-b183-91c1c467fcc6",
+        "25c5f717-338e-4e43-916e-db9063978230",
+        "feec418d-068e-43bc-9e8b-28964ab0ce79"
+      ],
       "example_reviews": [
-        "The app crashes every time I log my run.",
-        "Logging workouts causes the app to freeze."
+        "already sub unable access session week ive loyal user since first time problem change even uninstall redownload time",
+        "stuck endless loop trying log old account log webpage tell open app log app wrong credential option enter correct email address"
+      ]
+    },
+    {
+      "group_id": "G2",
+      "theme": "Aggressive Paywalls & High Cost",
+      "review_ids": [
+        "a4ccacbf-b2ea-46ec-8e90-3fd7a4f15184",
+        "3e69d6c7-313c-4f65-97b1-99a40b519c38",
+        "deca241c-a785-42ff-a11a-8e9ea65f3370",
+        "2181f1b1-4f60-4fdd-b0bf-f13efd235d50",
+        "c6d23b22-290f-4f63-8e93-66a50f52fff1",
+        "13a27745-13c7-48f1-a372-6e5ee40be8e4",
+        "c9c6447a-90f3-43fd-ab78-23e1b3e4db2e",
+        "b30bb2c5-1318-4569-82a4-eba23f97d80f",
+        "b123078b-d515-4b62-9087-e14af9eddc0b",
+        "af2723a3-04f8-447f-9ca4-7693eb9caf1b"
+      ],
+      "example_reviews": [
+        "content locked behind paywall",
+        "feature behind paywall"
+      ]
+    },
+    {
+      "group_id": "G3",
+      "theme": "Nighttime Audio & Download Stability",
+      "review_ids": [
+        "5ca67763-7ccd-48f4-bd03-31960ae51990",
+        "801923d5-fbc1-4623-9660-778684a67b4b",
+        "4186c0fd-47e1-43fe-bfd8-b0cfbb9d7894",
+        "49dc26f5-531d-460d-9bd8-b5a0e77ee419",
+        "3528b689-5dc3-458d-ace4-af2925f8443e",
+        "73496ae8-9050-4c58-b4de-8c6be4ffe6d3",
+        "080ce8bf-c700-4334-be7a-94aee09b6473",
+        "db30c9bc-15b9-4ef2-b911-0c1569a5cafb",
+        "2c0b3cf1-178d-4640-ac92-519329543a6f",
+        "0fafa084-672f-4c2d-b36f-703c9276f7b4"
+      ],
+      "example_reviews": [
+        "latest update offline downloads work anymore android mainly use downloaded content help sleep play without internet",
+        "app stop middle session night wake up frustrating"
+      ]
+    },
+    {
+      "group_id": "G4",
+      "theme": "UI Clutter & Feature Bloat",
+      "review_ids": [
+        "a87c08c2-155e-4769-8a94-be20322bf4a9",
+        "b750c41e-9d38-4c4c-86b8-b6c9a6debe5f",
+        "248efbef-d097-418d-9a82-949dedc2d8fa",
+        "ef71b542-c602-4bd8-8d86-7f89d86e5269",
+        "5b05d887-0411-44dd-9a55-18e7aab9fad0",
+        "2ad429bf-faeb-4c57-85be-2a1f8751f857",
+        "48d09379-ee23-4428-a349-982dc2e1e22a",
+        "6bff7bdc-a9e6-46e0-956f-b2a85e1015ba",
+        "fd4c9318-2bf5-48a8-b26c-f282e0ebd5ae",
+        "1d0d3b59-68ab-4bcf-bf54-67da33ff66e8"
+      ],
+      "example_reviews": [
+        "discontent ui way much content super cluttered headspace basic offering powerful one loved easy navigation",
+        "app used simple now over organized and bloated"
+      ]
+    },
+    {
+      "group_id": "G5",
+      "theme": "Positive Mental Health Outcomes",
+      "review_ids": [
+        "d3e4736a-1aa7-4cd5-8501-1ea0805c7867",
+        "49ee2835-5764-4956-afce-3aa857ac342d",
+        "9141c4e4-d3a4-4021-810a-b95b560cc424",
+        "acf58293-5fdb-4eb3-9942-4476b770bdd6",
+        "708561d1-362e-42ec-a18b-4a99c9f5af03",
+        "33e7133d-b85f-4503-b573-f67deb15f86c",
+        "3ac63fbe-b8a8-4014-9efe-123573f76d57",
+        "52f2288c-37d9-46c3-98e7-d19fd5202f32",
+        "f3beefdf-addb-4f00-b12d-66aff862134c",
+        "a21d2481-16a2-43df-82a3-58a3dfe4e913"
+      ],
+      "example_reviews": [
+        "incredible app get free headspace teen really helped look world positively ten ten",
+        "wonderful magical healing mindset regulator love"
       ]
     }
-  ]}
+  ]
+}

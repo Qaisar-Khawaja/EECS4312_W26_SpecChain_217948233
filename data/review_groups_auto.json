@@ -1,12 +1,78 @@
 {
-  "groups": [
+  "themes": [
     {
-      "group_id": "A1",
-      "theme": "Workout logging issues",
-      "review_ids": ["rev_12", "rev_33", "rev_41", "rev_92"],
-      "example_reviews": [
-        "The app crashes whenever I try to log a run.",
-        "Logging workouts causes the app to freeze."
+      "id": "T1",
+      "name": "UI Glitches",
+      "reviews": [
+        "0aca4c0a-6bf5-4415-9b9f-939607f0e8a7",
+        "362dda58-6651-4abb-9716-af451daf05f2",
+        "a60c457b-a794-4e57-bb37-bd4f37947e9a",
+        "7c964501-c8e5-4ead-8654-5fb48d43b739",
+        "eb1427e7-6c17-4c02-8aff-461d2d3ba812",
+        "988b1de2-002c-4ad6-a537-c6633b474397",
+        "32f3e4b2-0e62-4f64-8680-094d699e268d",
+        "1bb8a049-8fc2-48d9-ab73-46c4ab359ab0",
+        "49f05c51-c936-467d-8270-692374a0daf0",
+        "f1fd6f18-c3a2-4842-9de1-a06ab8faaadb",
+        "bd80a12d-601a-4aa0-9f58-0d935feb5803",
+        "8eecae25-4337-40d6-b528-0452734c9693",
+        "05f8dacd-f9ad-4c2d-a74e-66dec0f93d10"
+      ]
+    },
+    {
+      "id": "T2",
+      "name": "Billing Issues",
+      "reviews": [
+        "c495cc99-e06b-4e6f-a3a5-15caa838bbc2",
+        "7a067af7-eae9-4ebb-a77a-06d6a82db27d",
+        "f99c20b3-d270-4da4-bee5-487339566206",
+        "0b152b74-eb46-4732-b985-7e80105ca1c9",
+        "e7ff8e6f-469a-479a-b762-55943f879f01",
+        "9f7069f8-96b2-42ec-8615-244ae084fec5",
+        "dd02d65a-0ce7-46b9-83f4-71f5a66e89f4",
+        "f50c9dbb-fdc0-450d-98db-5c9ccf402221",
+        "c8fd8209-6a7f-4691-90b3-e3fc5c15ad7c",
+        "ea4aa5b2-92de-4c0e-885e-431401ce78a2"
+      ]
+    },
+    {
+      "id": "T3",
+      "name": "Feature Requests",
+      "reviews": [
+        "c7eabb0e-384b-4fb2-a1fa-9f9a38d81c1d",
+        "10bea72d-92c3-4158-8042-70093025cd61",
+        "8b86c8c1-41de-425d-ae01-286e273df035",
+        "33805289-5679-46fd-9287-43cbbab945d3",
+        "560a7faa-a0c4-44a2-b8c0-2ed12fa4f18c",
+        "ef3d73ec-a82d-4915-830f-dbe8a10d3a56",
+        "1b405a85-f322-4c81-b219-011aedecf80e"
+      ]
+    },
+    {
+      "id": "T4",
+      "name": "Performance Issues",
+      "reviews": [
+        "82f630f4-552b-44bf-86d8-4b2825ea0cca",
+        "ade55c6f-a624-4e08-b871-2e85c70524cb",
+        "ab6a176f-35f6-4978-80d8-a7e3049cf858",
+        "706cb7f6-636d-405d-a311-2855bfed3283",
+        "2657aa74-a9d2-493b-b926-5ba27b36aaf7",
+        "240f2ce8-8008-450b-a5c5-55ec80495099",
+        "6afc3556-569e-444f-8c6d-2e9bd07fb0d4",
+        "f340cd59-d60b-46e1-8966-773314bf1884"
+      ]
+    },
+    {
+      "id": "T5",
+      "name": "Content & Value",
+      "reviews": [
+        "a473d694-5688-4f59-a859-51601a28ff18",
+        "a81c40af-7a55-4e4f-901c-0cadcd631972",
+        "e858ff3e-e802-4003-b70e-30c3188589e1",
+        "6d75d385-ef43-4663-ae51-369fe705a24a",
+        "27e469df-b940-4a20-8bd3-d437b63dc1db",
+        "73ccf8ba-6da4-49d5-9e91-9e41b618657d",
+        "92e6571b-f5b5-47a5-bc2b-020b1300bd21"
       ]
     }
   ]
