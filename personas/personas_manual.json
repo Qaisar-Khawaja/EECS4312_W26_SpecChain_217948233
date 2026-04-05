@@ -1,22 +1,133 @@
 {  "personas": [
-    {
-      "id": "P1",
-      "name": "Frequent Activity Tracker",
-      "description": "A user who relies on the app to log workouts frequently and expects stable performance.",
-      "derived_from_group": "G1",
-      "goals": [
-        "Track workouts consistently",
-        "Log activity quickly"      ],
-      "pain_points": [
-        "App crashes during logging",
-        "Workout data sometimes disappears"      ],
-      "context": [
-        "Logging activities immediately after workouts",
-        "Using the app during outdoor exercise"      ],
-      "constraints": [
-        "Logging must be reliable",
-        "Data should not be lost"       ],
-      "evidence_reviews": [
-        "rev_12",
-        "rev_45"      ]
-    }  ] }
+  {
+    "id": "P1",
+    "name": "Locked-Out Linda",
+    "description": "A loyal, paying subscriber who is currently unable to access the service due to technical authentication errors.",
+    "derived_from_group": "G1",
+    "goals": [
+      "Access premium meditation content immediately",
+      "Sync subscription status across devices"
+    ],
+    "pain_points": [
+      "Stuck in endless login loops",
+      "App fails to recognize active paid status"
+    ],
+    "context": [
+      "Attempting to use the app for stress management during work hours",
+      "Trying to restore access after an app update or re-install"
+    ],
+    "constraints": [
+      "Login must be functional 100% of the time",
+      "Subscription validation should be automatic"
+    ],
+    "evidence_reviews": [
+      "82f630f4-552b-44bf-86d8-4b2825ea0cca",
+      "15fe4b34-503e-4209-905f-1ebf4f5af7e7"
+    ]
+  },
+  {
+    "id": "P2",
+    "name": "Budget-Conscious Ben",
+    "description": "A student user looking for mental health support who feels excluded by the high cost and aggressive monetization.",
+    "derived_from_group": "G2",
+    "goals": [
+      "Find high-quality free meditation sessions",
+      "Avoid accidental or deceptive subscription charges"
+    ],
+    "pain_points": [
+      "Too much content locked behind a paywall",
+      "Aggressive 'upselling' pop-ups"
+    ],
+    "context": [
+      "Searching for anxiety relief tools with zero budget",
+      "Evaluating the app during a short free trial period"
+    ],
+    "constraints": [
+      "Free content must be clearly labeled",
+      "Subscription costs should be transparent and affordable"
+    ],
+    "evidence_reviews": [
+      "a4ccacbf-b2ea-46ec-8e90-3fd7a4f15184",
+      "3e69d6c7-313c-4f65-97b1-99a40b519c38"
+    ]
+  },
+  {
+    "id": "P3",
+    "name": "Sleepless Sarah",
+    "description": "A user with chronic sleep issues who relies on the app's stability to maintain rest through the night.",
+    "derived_from_group": "G3",
+    "goals": [
+      "Listen to uninterrupted sleep audio for 8 hours",
+      "Use downloaded content without an internet connection"
+    ],
+    "pain_points": [
+      "Audio stops unexpectedly in the middle of the night",
+      "Offline downloads fail to play"
+    ],
+    "context": [
+      "Using the app in a dark room with low connectivity",
+      "Depending on the app as a sleep aid while traveling"
+    ],
+    "constraints": [
+      "Playback must not be interrupted by OS background limits",
+      "Offline mode must work without pinging a server"
+    ],
+    "evidence_reviews": [
+      "5ca67763-7ccd-48f4-bd03-31960ae51990",
+      "801923d5-fbc1-4623-9660-778684a67b4b"
+    ]
+  },
+  {
+    "id": "P4",
+    "name": "Minimalist Mark",
+    "description": "A long-time veteran user who is frustrated by the increasing complexity and clutter of the app's design.",
+    "derived_from_group": "G4",
+    "goals": [
+      "Navigate to basic meditation tools quickly",
+      "Reduce visual noise and distractions within the UI"
+    ],
+    "pain_points": [
+      "Over-organized and 'bloated' interface",
+      "Difficulty finding simple, core features"
+    ],
+    "context": [
+      "Trying to find a quick breathing exercise during a moment of panic",
+      "Using the app daily for years and seeing it become more complex"
+    ],
+    "constraints": [
+      "Navigation should require minimal clicks",
+      "Interface should prioritize calm over promotion"
+    ],
+    "evidence_reviews": [
+      "a87c08c2-155e-4769-8a94-be20322bf4a9",
+      "b750c41e-9d38-4c4c-86b8-b6c9a6debe5f"
+    ]
+  },
+  {
+    "id": "P5",
+    "name": "Zen Zoe",
+    "description": "A highly satisfied user who views the app as an essential, life-changing tool for daily mental health.",
+    "derived_from_group": "G5",
+    "goals": [
+      "Maintain a daily meditation streak",
+      "Explore new content that supports a positive mindset"
+    ],
+    "pain_points": [
+      "Fear of bugs disrupting a critical health routine",
+      "Concern over losing access to favorite guided voices"
+    ],
+    "context": [
+      "Starting every morning with a 10-minute guided session",
+      "Recommending the app to friends and family as a 'must-have'"
+    ],
+    "constraints": [
+      "System reliability must protect the user's daily 'streak'",
+      "Content quality must remain consistently high"
+    ],
+    "evidence_reviews": [
+      "d3e4736a-1aa7-4cd5-8501-1ea0805c7867",
+      "49ee2835-5764-4956-afce-3aa857ac342d"
+    ]
+  }
+]
+}

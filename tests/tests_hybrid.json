@@ -3,14 +3,458 @@
     {
       "test_id": "T_hybrid_1",
       "requirement_id": "FR_hybrid_1",
-      "scenario": "Save a workout entry without crashing",
+      "scenario": "Complete a meditation session without crashes or freezes",
       "steps": [
-        "Open the workout logging feature",
-        "Enter workout information",
-        "Submit the workout"
+        "Launch the app with a stable internet connection",
+        "Select any meditation session from the library",
+        "Start the meditation session",
+        "Allow the session to play through its entire duration without user interaction"
       ],
-      "expected_result": "The workout is saved successfully and the application does not crash.",
-      "notes": "Revised the expected result to match the updated hybrid requirement."
+      "expected_result": "The meditation session plays from start to finish without the app crashing, freezing, or requiring the user to restart. The session completes normally and returns to the post-session screen.",
+      "notes": "Tests the core stability requirement during active meditation use. Should be tested with sessions of varying lengths (5 min, 10 min, 20 min)."
+    },
+    {
+      "test_id": "T_hybrid_2",
+      "requirement_id": "FR_hybrid_2",
+      "scenario": "Measure app loading time on initial launch",
+      "steps": [
+        "Close the app completely (force stop if necessary)",
+        "Ensure device has stable internet connection (3G or better)",
+        "Record current time",
+        "Launch the app",
+        "Wait until the main interface is fully loaded and interactive",
+        "Record time when interface is ready"
+      ],
+      "expected_result": "The app loads and displays a fully interactive main interface within 3 seconds of launch. User can tap on any navigation element without additional loading screens.",
+      "notes": "Time measurement should start from app icon tap to when the home screen is fully interactive. Test on devices meeting minimum specifications."
+    },
+    {
+      "test_id": "T_hybrid_3",
+      "requirement_id": "FR_hybrid_3",
+      "scenario": "Verify meditation does not stop silently during playback",
+      "steps": [
+        "Launch the app",
+        "Select a 10-minute meditation session",
+        "Start the meditation",
+        "Lock the device screen",
+        "Wait for 5 minutes without interaction",
+        "Unlock device and check meditation status"
+      ],
+      "expected_result": "The meditation continues playing in the background. After 5 minutes, the session is still active and has not stopped silently. If an error occurs, an error message is displayed to the user rather than silent failure.",
+      "notes": "Tests background playback stability and error messaging. Should be tested with screen locked, screen off, and app in background."
+    },
+    {
+      "test_id": "T_hybrid_4",
+      "requirement_id": "FR_hybrid_4",
+      "scenario": "Verify active subscription grants access to all premium content",
+      "steps": [
+        "Log in with an account that has an active paid subscription",
+        "Navigate to the meditation content library",
+        "Select a piece of content marked as premium/subscription-only",
+        "Attempt to play the content"
+      ],
+      "expected_result": "The premium content plays immediately without any payment prompts, subscription upgrade messages, or locked content barriers. All premium features are accessible.",
+      "notes": "Test with multiple premium content items across different categories. Verify subscription status in account settings before testing."
+    },
+    {
+      "test_id": "T_hybrid_5",
+      "requirement_id": "FR_hybrid_5",
+      "scenario": "Verify no charges occur after subscription cancellation",
+      "steps": [
+        "Log in with an active paid subscription account",
+        "Navigate to account settings",
+        "Cancel the subscription following the cancellation flow",
+        "Confirm cancellation and save confirmation email",
+        "Wait until the next scheduled billing date passes",
+        "Check payment method for charges",
+        "Check account subscription status"
+      ],
+      "expected_result": "No charge is applied to the payment method after the cancellation date. The account settings show subscription status as 'cancelled' or 'inactive'. No renewal occurs.",
+      "notes": "This test requires waiting for a billing cycle and may need to be performed in a test environment with accelerated billing cycles. Document the cancellation date and expected renewal date."
+    },
+    {
+      "test_id": "T_hybrid_6",
+      "requirement_id": "FR_hybrid_6",
+      "scenario": "Successfully complete subscription cancellation process",
+      "steps": [
+        "Log in with an active paid subscription account",
+        "Navigate to account settings > subscription management",
+        "Click or tap 'Cancel subscription'",
+        "Complete any confirmation steps required",
+        "Record the time when cancellation is submitted",
+        "Wait for confirmation email",
+        "Check email inbox for confirmation within 1 hour"
+      ],
+      "expected_result": "The cancellation process completes within 2 minutes without errors. A confirmation email is received within 1 hour stating the subscription has been cancelled. Account settings reflect the cancelled status.",
+      "notes": "Test the full cancellation flow including any retention offers or confirmation steps. Verify email is sent to the registered email address."
+    },
+    {
+      "test_id": "T_hybrid_7",
+      "requirement_id": "FR_hybrid_7",
+      "scenario": "Receive support response to billing inquiry within 48 hours",
+      "steps": [
+        "Navigate to app support or help section",
+        "Submit a support request about a subscription or billing issue",
+        "Include clear description of the issue and contact information",
+        "Record submission timestamp",
+        "Monitor email for support response",
+        "Record timestamp of first response received"
+      ],
+      "expected_result": "An initial response from the support team is received via email within 48 hours of submission. The response acknowledges the issue and provides a ticket number or next steps.",
+      "notes": "Response quality is not evaluated here, only response time. The response should acknowledge receipt and indicate the issue is being reviewed. Test during business days for accurate measurement."
+    },
+    {
+      "test_id": "T_hybrid_8",
+      "requirement_id": "FR_hybrid_8",
+      "scenario": "Navigate to specific meditation content within 3 taps",
+      "steps": [
+        "Launch the app to the home screen",
+        "Identify a specific meditation category (e.g., 'Sleep', 'Anxiety', 'Focus')",
+        "Count the number of taps required to reach a specific session in that category",
+        "Record the navigation path taken"
+      ],
+      "expected_result": "The user reaches a specific meditation session within 3 taps from the home screen. Navigation labels are clear and intuitive. No excessive scrolling through unlabeled lists is required.",
+      "notes": "Test with multiple different categories and content types. Each navigation element should be clearly labeled and easily identifiable. Count each screen transition as one tap."
+    },
+    {
+      "test_id": "T_hybrid_9",
+      "requirement_id": "FR_hybrid_9",
+      "scenario": "Verify meditation content displays with clean, organized layout",
+      "steps": [
+        "Navigate to any meditation content list or category page",
+        "Examine the visual layout of content items",
+        "Check for overlapping elements, inconsistent spacing, or unclear hierarchy",
+        "Scroll through the list to verify consistency"
+      ],
+      "expected_result": "Content items have consistent spacing and formatting. Each item is clearly distinguishable from others. No text or images overlap. Section headers are visually distinct from content items. The layout maintains consistency throughout scrolling.",
+      "notes": "Visual inspection test. Take screenshots for documentation. Test on different screen sizes if possible to ensure responsive layout."
+    },
+    {
+      "test_id": "T_hybrid_10",
+      "requirement_id": "FR_hybrid_10",
+      "scenario": "Reset a meditation course to start from the beginning",
+      "steps": [
+        "Log in to an account that has started or completed a meditation course",
+        "Navigate to the course that has progress (not at 0%)",
+        "Note the current progress percentage or session number",
+        "Locate and select the reset or restart option for the course",
+        "Confirm the reset action if prompted",
+        "Check the course progress after reset"
+      ],
+      "expected_result": "The course progress resets to 0%. The user is positioned at session 1 of the course. Previous completion status is cleared. The user can begin the course again from the start.",
+      "notes": "Test with both partially completed and fully completed courses. Verify that reset does not affect other courses or overall app progress statistics."
+    },
+    {
+      "test_id": "T_hybrid_11",
+      "requirement_id": "FR_hybrid_11",
+      "scenario": "Verify variety of meditation topics and instructors available",
+      "steps": [
+        "Navigate to the meditation content library",
+        "Browse or filter content by topic/category",
+        "Count the number of distinct topic categories available",
+        "For each topic category, identify the different instructors who have content in that category",
+        "Record the number of topics and instructors per topic"
+      ],
+      "expected_result": "At least 8 different topic categories are available (e.g., Sleep, Anxiety, Focus, Stress, Meditation Basics, Mindfulness, etc.). Each topic category contains content from at least 2 different instructors.",
+      "notes": "Document the topic names and instructor names found. This ensures diversity of content and teaching styles. Count only distinct instructors per category."
+    },
+    {
+      "test_id": "T_hybrid_12",
+      "requirement_id": "FR_hybrid_12",
+      "scenario": "Access at least 15 meditation sessions without paid subscription",
+      "steps": [
+        "Create a new free account without entering any payment information",
+        "Browse the entire meditation library",
+        "Identify all sessions that are marked as free or do not require subscription",
+        "Count the number of complete free meditation sessions",
+        "Attempt to play several free sessions to verify they are fully accessible"
+      ],
+      "expected_result": "At least 15 complete meditation sessions are available and playable without requiring a subscription or payment. Each free session can be played in full without interruption or upgrade prompts.",
+      "notes": "Free sessions should be complete experiences, not just previews or samples. Count only full-length meditation sessions, not promotional clips or introductions."
+    },
+    {
+      "test_id": "T_hybrid_13",
+      "requirement_id": "FR_hybrid_13",
+      "scenario": "Verify clear visual distinction between free and premium content",
+      "steps": [
+        "Log in with a free account (no subscription)",
+        "Navigate to the meditation content library",
+        "Browse through several different content lists and categories",
+        "Examine each meditation session listing for visual indicators of free vs. premium",
+        "Check both list view and detail view for each session"
+      ],
+      "expected_result": "Every meditation session displays a clear visual indicator (such as a 'Free' badge, lock icon for premium, or other consistent labeling) showing whether it requires a subscription. The indicator is visible in both list views and detail views without needing to tap the session.",
+      "notes": "The indicator should be immediately visible and consistent across the app. Users should know before tapping whether content is free or requires subscription. Take screenshots showing labeling examples."
+    },
+    {
+      "test_id": "T_hybrid_14",
+      "requirement_id": "FR_hybrid_14",
+      "scenario": "Create account and access free content without payment information",
+      "steps": [
+        "Download and install the app on a device",
+        "Launch the app for the first time",
+        "Complete the account signup process",
+        "Observe whether payment information (credit card, billing address, etc.) is requested",
+        "Complete signup without entering payment details",
+        "Access and play free meditation content"
+      ],
+      "expected_result": "The signup process completes successfully without requiring credit card or payment information. The user can create a free account with only basic information (email, password, etc.). After signup, free meditation content is immediately accessible and playable.",
+      "notes": "Payment information should not be mandatory for free tier access. Optional payment entry is acceptable, but must be skippable. Verify that 'skip' or 'continue without payment' options are clearly visible if payment screen appears."
+    },
+    {
+      "test_id": "T_hybrid_15",
+      "requirement_id": "FR_hybrid_1",
+      "scenario": "Verify app stability during meditation with screen lock",
+      "steps": [
+        "Launch the app and start a 15-minute meditation session",
+        "Allow the session to play for 2 minutes",
+        "Lock the device screen",
+        "Wait 10 minutes",
+        "Unlock the device"
+      ],
+      "expected_result": "The meditation session continues playing after screen unlock without interruption. The app has not crashed or frozen. Audio playback remained continuous during screen lock.",
+      "notes": "Tests stability during common use case of meditating with screen locked. Verifies background audio continues properly."
+    },
+    {
+      "test_id": "T_hybrid_16",
+      "requirement_id": "FR_hybrid_2",
+      "scenario": "Verify fast navigation to meditation content after app launch",
+      "steps": [
+        "Launch the app with stable internet connection",
+        "Wait for main interface to load",
+        "Record time",
+        "Navigate to 'Guided Meditations' section",
+        "Record time when content list appears"
+      ],
+      "expected_result": "Navigation from home screen to meditation content section occurs within 1 second. Content list loads without delay or additional loading screens.",
+      "notes": "Tests not just app launch but also navigation speed within the app. Ensures users can quickly access content."
+    },
+    {
+      "test_id": "T_hybrid_17",
+      "requirement_id": "FR_hybrid_3",
+      "scenario": "Test error messaging when meditation stops unexpectedly",
+      "steps": [
+        "Start a meditation session",
+        "Simulate a network interruption (turn off WiFi/data mid-session)",
+        "Observe app behavior"
+      ],
+      "expected_result": "If the session stops due to network issues, the app displays a clear error message explaining the problem (e.g., 'Connection lost. Unable to continue meditation.'). The app does not fail silently.",
+      "notes": "Tests that errors are communicated to users rather than leaving them confused about why meditation stopped."
+    },
+    {
+      "test_id": "T_hybrid_18",
+      "requirement_id": "FR_hybrid_4",
+      "scenario": "Verify subscription status is correctly recognized across app sections",
+      "steps": [
+        "Log in with an active paid subscription",
+        "Navigate to multiple app sections (home, library, profile, settings)",
+        "Attempt to access premium features in each section",
+        "Verify subscription status display in account settings"
+      ],
+      "expected_result": "All sections of the app correctly recognize the active subscription. No premium content is locked or prompts for payment. Account settings accurately display 'Active' subscription status.",
+      "notes": "Tests that subscription status is properly synchronized across the entire app, not just certain sections."
+    },
+    {
+      "test_id": "T_hybrid_19",
+      "requirement_id": "FR_hybrid_5",
+      "scenario": "Verify subscription cancellation updates billing status immediately",
+      "steps": [
+        "Log in with an active subscription",
+        "Note the next billing date in account settings",
+        "Cancel the subscription",
+        "Immediately check account settings again"
+      ],
+      "expected_result": "Account settings immediately reflect the cancellation. Next billing date is removed or shows 'No upcoming charges'. Subscription status shows as 'Cancelled' or 'Expires on [date]'.",
+      "notes": "Tests immediate feedback on cancellation rather than waiting for billing cycle. Users should see immediate confirmation of cancellation status."
+    },
+    {
+      "test_id": "T_hybrid_20",
+      "requirement_id": "FR_hybrid_6",
+      "scenario": "Verify clear subscription cancellation confirmation",
+      "steps": [
+        "Navigate to subscription settings",
+        "Initiate cancellation process",
+        "Complete all required steps",
+        "Check for on-screen confirmation message",
+        "Check email for confirmation"
+      ],
+      "expected_result": "An on-screen confirmation message appears immediately after cancellation. The confirmation email arrives within 1 hour with clear cancellation details including effective date and no-charge confirmation.",
+      "notes": "Tests both immediate and delayed confirmation mechanisms. Email should include all relevant details users need for their records."
+    },
+    {
+      "test_id": "T_hybrid_21",
+      "requirement_id": "FR_hybrid_7",
+      "scenario": "Submit billing issue and track support response time",
+      "steps": [
+        "Navigate to Help/Support section",
+        "Select 'Contact Support' or 'Report Issue'",
+        "Choose 'Billing/Subscription' as issue category",
+        "Describe a billing problem in detail",
+        "Submit the support request",
+        "Record timestamp of submission",
+        "Monitor email for 48 hours"
+      ],
+      "expected_result": "Support team sends an initial response within 48 hours. Response includes ticket number, acknowledgment of the specific issue, and expected timeline for resolution.",
+      "notes": "Document exact submission time and response time. Initial response should be personalized to the issue, not just an auto-reply."
+    },
+    {
+      "test_id": "T_hybrid_22",
+      "requirement_id": "FR_hybrid_8",
+      "scenario": "Test navigation efficiency to different content types",
+      "steps": [
+        "From app home screen, navigate to 'Sleep meditations'",
+        "Count taps required",
+        "Return to home",
+        "Navigate to 'Anxiety relief' meditations",
+        "Count taps required",
+        "Return to home",
+        "Navigate to 'Beginner courses'",
+        "Count taps required"
+      ],
+      "expected_result": "Each content type is reachable within 3 taps from home screen. Navigation paths are consistent and predictable across different content categories.",
+      "notes": "Tests navigation efficiency across multiple use cases. Ensures consistent navigation patterns throughout the app."
+    },
+    {
+      "test_id": "T_hybrid_23",
+      "requirement_id": "FR_hybrid_9",
+      "scenario": "Verify consistent visual design across content pages",
+      "steps": [
+        "Navigate to the Sleep category page",
+        "Take screenshot and note layout elements",
+        "Navigate to the Stress category page",
+        "Take screenshot and compare layout",
+        "Navigate to the Focus category page",
+        "Take screenshot and compare layout"
+      ],
+      "expected_result": "All category pages use consistent spacing, typography, and layout structure. Session cards are uniformly sized and spaced. Headers and filters appear in the same positions across pages.",
+      "notes": "Visual consistency test. Look for unintentional design variations that could confuse users or appear unprofessional."
+    },
+    {
+      "test_id": "T_hybrid_24",
+      "requirement_id": "FR_hybrid_10",
+      "scenario": "Verify course reset with partial progress",
+      "steps": [
+        "Log in with an account that has completed 5 out of 10 sessions in a course",
+        "View course details showing 50% completion",
+        "Select 'Reset course' or 'Start over' option",
+        "Confirm the reset",
+        "View course details again"
+      ],
+      "expected_result": "Course shows 0% completion. User is directed to Session 1. All session checkmarks or completion indicators are cleared. User can start the course fresh.",
+      "notes": "Tests reset functionality with partial progress. Verify user progress tracking is properly reset."
+    },
+    {
+      "test_id": "T_hybrid_25",
+      "requirement_id": "FR_hybrid_11",
+      "scenario": "Audit content library for topic and instructor diversity",
+      "steps": [
+        "Navigate to content library",
+        "List all available topic categories",
+        "For each topic, list all instructors with content in that topic",
+        "Create a matrix of topics vs. instructors",
+        "Count distinct topics and instructors per topic"
+      ],
+      "expected_result": "At least 8 distinct topic categories exist. Each topic has content from at least 2 different instructors. Content library shows variety in both subject matter and teaching voices.",
+      "notes": "Comprehensive audit test. Document the full topic/instructor matrix for reference. This data can inform content strategy."
+    },
+    {
+      "test_id": "T_hybrid_26",
+      "requirement_id": "FR_hybrid_12",
+      "scenario": "Verify free content quality and completeness",
+      "steps": [
+        "Create free account without payment info",
+        "Browse all free content",
+        "Count free sessions",
+        "Play 3 different free sessions completely",
+        "Verify each plays without interruption or upgrade prompts"
+      ],
+      "expected_result": "At least 15 complete meditation sessions are free. Each free session plays in its entirety without mid-session upgrade prompts or truncation. Free sessions are fully-produced, not just excerpts.",
+      "notes": "Quality check for free tier. Free content should provide genuine value, not just teasers. Test sessions should be different types (sleep, anxiety, focus, etc.)."
+    },
+    {
+      "test_id": "T_hybrid_27",
+      "requirement_id": "FR_hybrid_13",
+      "scenario": "Test free vs. premium labeling in search results",
+      "steps": [
+        "Log in with free account",
+        "Search for 'meditation' in search bar",
+        "Examine search results page",
+        "Note which sessions show free/premium indicators",
+        "Tap on a free session to view details",
+        "Return and tap on a premium session to view details"
+      ],
+      "expected_result": "Every search result shows a clear free or premium indicator. Free sessions are marked with 'Free' badge or similar. Premium sessions show lock icon or 'Premium' label. Indicators are visible without tapping into session details.",
+      "notes": "Tests labeling in dynamic search context. Users should be able to filter their choices based on tier before clicking through."
+    },
+    {
+      "test_id": "T_hybrid_28",
+      "requirement_id": "FR_hybrid_14",
+      "scenario": "Test new user signup flow without payment requirement",
+      "steps": [
+        "Uninstall and reinstall app (or use new device)",
+        "Launch app as first-time user",
+        "Begin signup process",
+        "Enter email and password",
+        "Complete any profile questions",
+        "Look for payment information requests",
+        "Complete signup",
+        "Access app home screen"
+      ],
+      "expected_result": "Signup completes without requiring credit card, billing address, or payment method. If payment screen appears, a clear 'Skip' or 'Maybe later' option is available and prominent. Free content is immediately accessible after signup.",
+      "notes": "Tests new user onboarding flow. Payment should not be a barrier to trying the app. Document exact signup flow and number of screens."
+    },
+    {
+      "test_id": "T_hybrid_29",
+      "requirement_id": "FR_hybrid_1",
+      "scenario": "Long meditation session stability test",
+      "steps": [
+        "Select a 30-minute or 1-hour meditation session",
+        "Start the session",
+        "Let it play completely without interaction",
+        "Monitor app behavior throughout"
+      ],
+      "expected_result": "The entire long meditation session completes without crashes, freezes, or audio interruptions. App remains stable throughout the extended duration.",
+      "notes": "Tests stability over longer time periods. Important for users who do extended meditation practices. Monitor memory usage if possible."
+    },
+    {
+      "test_id": "T_hybrid_30",
+      "requirement_id": "FR_hybrid_4",
+      "scenario": "Test subscription access immediately after purchase",
+      "steps": [
+        "Log in with free account",
+        "Note which content is locked",
+        "Purchase a subscription through the app",
+        "Wait for purchase confirmation",
+        "Immediately attempt to access previously locked content"
+      ],
+      "expected_result": "Immediately after subscription purchase confirmation, all premium content becomes accessible. No app restart or re-login is required. Locked content indicators change to unlocked.",
+      "notes": "Tests real-time subscription activation. Users should have instant access after payment, not delayed activation."
+    },
+    {
+      "test_id": "T_hybrid_31",
+      "requirement_id": "FR_hybrid_12",
+      "scenario": "Verify free content is discoverable without subscription prompts",
+      "steps": [
+        "Create new free account",
+        "Browse through app for 10 minutes",
+        "Count subscription prompts or upgrade messages encountered",
+        "Verify ability to find and play free content"
+      ],
+      "expected_result": "Free content is easily discoverable and accessible. Subscription prompts appear no more than once per session. Free users can navigate and use the app without constant upgrade pressure.",
+      "notes": "Tests user experience for free tier. While upgrade prompts are acceptable, they shouldn't dominate the experience. Free users should feel welcomed, not constantly pressured."
+    },
+    {
+      "test_id": "T_hybrid_32",
+      "requirement_id": "FR_hybrid_8",
+      "scenario": "Test navigation with assistive features enabled",
+      "steps": [
+        "Enable screen reader or TalkBack/VoiceOver",
+        "Navigate from home to specific meditation session",
+        "Count navigation steps required",
+        "Verify all navigation elements are properly labeled"
+      ],
+      "expected_result": "Navigation remains efficient with assistive technology enabled. All buttons and links have descriptive labels. User can reach desired content within 3-4 navigation actions.",
+      "notes": "Accessibility test. Ensures navigation efficiency applies to all users including those using assistive technology. Proper labeling is critical for screen readers."
     }
   ]
 }

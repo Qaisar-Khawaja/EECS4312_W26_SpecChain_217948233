@@ -3,13 +3,375 @@
     {
       "test_id": "T_auto_1",
       "requirement_id": "FR_auto_1",
-      "scenario": "Logging a workout without crashing",
+      "scenario": "Stable meditation session with uninterrupted experience",
       "steps": [
-        "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
+        "Precondition: User has a stable internet connection",
+        "User initiates a meditation session for a selected duration",
+        "Verify the meditation session starts without interruption or delay",
+        "Monitor the session for the selected duration"
       ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
+      "expected_result": "The meditation session continues uninterrupted for the selected duration without any crashes or freezes"
+    },
+    {
+      "test_id": "T_auto_2",
+      "requirement_id": "FR_auto_2",
+      "scenario": "Validate app loading time and navigation to meditation content",
+      "steps": [
+        "Launch the app on a device with a stable internet connection",
+        "Measure the time it takes for the app to load and display the main menu",
+        "Navigate to a meditation content section (e.g., 'Guided Meditations')",
+        "Verify that the navigation to the meditation content section is instantaneous"
+      ],
+      "expected_result": "The app loads within 2 seconds, and navigation to meditation content is instantaneous, allowing the user to access their desired content without delay"
+    },
+    {
+      "test_id": "T_auto_3",
+      "requirement_id": "FR_auto_3",
+      "scenario": "Validating access to meditation content library",
+      "steps": [
+        "Launch the app with a stable internet connection",
+        "Navigate to the content library section",
+        "Verify the display of meditation sessions across different topics and instructors"
+      ],
+      "expected_result": "The user is able to view and select from a minimum of 50 meditation sessions across 5 different topics, with a variety of instructors."
+    },
+    {
+      "test_id": "T_auto_4",
+      "requirement_id": "FR_auto_4",
+      "scenario": "User views progress dashboard after completing a meditation session",
+      "steps": [
+        "Complete a meditation session with a duration of 10 minutes and type 'relaxation'",
+        "Navigate to the user's progress dashboard",
+        "Verify that the completed session is listed with date, duration, and type of meditation"
+      ],
+      "expected_result": "The user's progress dashboard displays a record of the completed meditation session, including date, duration (10 minutes), and type of meditation (relaxation)"
+    },
+    {
+      "test_id": "T_auto_5",
+      "requirement_id": "FR_auto_5",
+      "scenario": "User completes meditation session on one device and verifies progress syncs across multiple devices",
+      "steps": [
+        "Log in to the application on two separate devices (Device A and Device B) using the same user credentials",
+        "On Device A, start and complete a meditation session",
+        "Wait for 10 minutes",
+        "On Device B, navigate to the user's progress page"
+      ],
+      "expected_result": "The user's progress on Device B accurately reflects the completed meditation session from Device A"
+    },
+    {
+      "test_id": "T_auto_6",
+      "requirement_id": "FR_auto_6",
+      "scenario": "Validate premium subscription experience with minimal interruptions and timely issue resolution",
+      "steps": [
+        "Activate a premium subscription on the app",
+        "Simulate usage of the app for a month with various features",
+        "Introduce a crash or interruption during usage",
+        "Report the issue through the app's feedback mechanism",
+        "Verify that a notification with a resolution or workaround is received within 24 hours"
+      ],
+      "expected_result": "The user experiences no more than 1 interruption or crash per month and receives a notification with a resolution or workaround within 24 hours of reporting an issue"
+    },
+    {
+      "test_id": "T_auto_7",
+      "requirement_id": "FR_auto_7",
+      "scenario": "Verify clear and transparent billing system for active subscription",
+      "steps": [
+        "Log in to the system with an active subscription",
+        "Navigate to account settings"
+      ],
+      "expected_result": "The account settings display a clear and up-to-date breakdown of the subscription status, including the current billing cycle and any upcoming charges"
+    },
+    {
+      "test_id": "T_auto_8",
+      "requirement_id": "FR_auto_8",
+      "scenario": "Cancel subscription and verify confirmation email",
+      "steps": [
+        "Log in to the application with valid credentials",
+        "Navigate to account settings and select the cancellation option",
+        "Confirm the cancellation"
+      ],
+      "expected_result": "A confirmation email is sent with a clear message stating that the subscription has been successfully cancelled and will not incur any further charges"
+    },
+    {
+      "test_id": "T_auto_9",
+      "requirement_id": "FR_auto_9",
+      "scenario": "Verify Subscription and Billing Details Display",
+      "steps": [
+        "Log in to the system with a valid subscriber account",
+        "Navigate to the account settings page",
+        "Verify the subscription details section displays the plan name, billing cycle, and upcoming charges"
+      ],
+      "expected_result": "The account settings page displays a clear and concise summary of the subscription details, including the plan name, billing cycle, and any upcoming charges."
+    },
+    {
+      "test_id": "T_auto_10",
+      "requirement_id": "FR_auto_10",
+      "scenario": "Verify that a cancelled subscription results in no further charges and accurate account status update",
+      "steps": [
+        "Log in to the system as an existing user (Samantha)",
+        "Navigate to the subscription management page",
+        "Cancel the active subscription",
+        "Verify that the system confirms the cancellation",
+        "Advance to the next billing cycle (simulate time passing)",
+        "Verify that no additional charges are applied to Samantha's account",
+        "Verify that Samantha's account status reflects the cancelled subscription"
+      ],
+      "expected_result": "Samantha's account status is updated to 'cancelled' and no further charges are applied"
+    },
+    {
+      "test_id": "T_auto_11",
+      "requirement_id": "FR_auto_11",
+      "scenario": "Validating Support Response Time and Issue Resolution for Subscription/Billing Issues",
+      "steps": [
+        "Log in as Samantha Thompson with an active subscription",
+        "Simulate a subscription/billing issue (e.g., incorrect charge)",
+        "Submit a support request through the app/website",
+        "Verify that a support agent responds within 24 hours",
+        "Resolve the issue to Samantha's satisfaction",
+        "Verify that Samantha confirms issue resolution"
+      ],
+      "expected_result": "Samantha receives a response within 24 hours and her issue is resolved to her satisfaction"
+    },
+    {
+      "test_id": "T_auto_12",
+      "requirement_id": "FR_auto_12",
+      "scenario": "Validating clear and easy-to-use interface for managing subscription and billing details",
+      "steps": [
+        "Launch the application and navigate to the account settings page",
+        "Verify that the account settings page displays a clear and intuitive interface for managing subscription and billing details"
+      ],
+      "expected_result": "The account settings page displays a clear and intuitive interface that allows easy management of subscription and billing details, including options to view or update subscription details"
+    },
+    {
+      "test_id": "T_auto_13",
+      "requirement_id": "FR_auto_13",
+      "scenario": "User navigates through the app and interacts with a feature",
+      "steps": [
+        "Launch the application",
+        "Navigate to a feature within the app",
+        "Interact with the feature (e.g., click a button, fill out a form)"
+      ],
+      "expected_result": "The app responds to the user's interaction within 2 seconds without crashing or freezing"
+    },
+    {
+      "test_id": "T_auto_14",
+      "requirement_id": "FR_auto_14",
+      "scenario": "Validating intuitive navigation to meditation category",
+      "steps": [
+        "Launch the app and navigate to the homepage",
+        "Identify a specific meditation category (e.g., 'Stress Reduction')",
+        "Click on the category or navigate to it through available options"
+      ],
+      "expected_result": "The user can find the specific meditation category within 3 clicks from the homepage"
+    },
+    {
+      "test_id": "T_auto_15",
+      "requirement_id": "FR_auto_15",
+      "scenario": "Free Meditation Content Accessibility",
+      "steps": [
+        "Launch the app and navigate to the meditation content section",
+        "Perform a search for free meditation sessions",
+        "Retrieve the list of search results and identify the free content",
+        "Calculate the percentage of free content in the search results"
+      ],
+      "expected_result": "At least 50% of the search results are available for free"
+    },
+    {
+      "test_id": "T_auto_16",
+      "requirement_id": "FR_auto_16",
+      "scenario": "Validating meditation content search with filter application",
+      "steps": [
+        "Launch the meditation app and navigate to the meditation content section",
+        "Apply a specific filter (e.g., topic: stress, duration: 10 minutes)",
+        "Verify that relevant meditation content is displayed",
+        "Measure the time taken to display the results after applying the filter"
+      ],
+      "expected_result": "The app displays relevant meditation content within 1 second of applying the filter"
+    },
+    {
+      "test_id": "T_auto_17",
+      "requirement_id": "FR_auto_17",
+      "scenario": "Validation of clear labeling of free and paid content for meditation sessions",
+      "steps": [
+        "Launch the app and navigate to the meditation sessions list",
+        "Select a free meditation session and view its details",
+        "Verify that the session details clearly indicate it is free",
+        "Select a paid meditation session and view its details",
+        "Verify that the session details clearly indicate it requires a subscription"
+      ],
+      "expected_result": "The app clearly indicates whether each meditation session is free or requires a subscription"
+    },
+    {
+      "test_id": "T_auto_18",
+      "requirement_id": "FR_auto_18",
+      "scenario": "Commute Environment Network Switch",
+      "steps": [
+        "Launch the app on a mobile device connected to Wi-Fi",
+        "Verify the app is functioning as expected",
+        "Switch the mobile device's network connection from Wi-Fi to cellular",
+        "Verify the app maintains its functionality without interruption"
+      ],
+      "expected_result": "The app continues to function seamlessly without any interruptions or loss of data when the network connection switches from Wi-Fi to cellular."
+    },
+    {
+      "test_id": "T_auto_19",
+      "requirement_id": "FR_auto_19",
+      "scenario": "User reports an error and receives feedback on the app's performance issue",
+      "steps": [
+        "Simulate an error in the app",
+        "Log in as a user and report the issue",
+        "Verify the app sends a confirmation of receipt",
+        "Verify the app provides an estimated timeframe for resolution"
+      ],
+      "expected_result": "The app sends a confirmation of receipt and provides an estimated timeframe for resolution within 24 hours"
+    },
+    {
+      "test_id": "T_auto_20",
+      "requirement_id": "FR_auto_20",
+      "scenario": "Access to free meditation courses and features without a paid subscription",
+      "steps": [
+        "Launch the meditation app without logging in",
+        "Verify the availability of free meditation courses and features on the homepage"
+      ],
+      "expected_result": "The user can view and access a selection of free meditation courses and features without any restrictions or prompts for a paid subscription"
+    },
+    {
+      "test_id": "T_auto_21",
+      "requirement_id": "FR_auto_21",
+      "scenario": "Restart Meditation Course",
+      "steps": [
+        "Log in as an existing user",
+        "Select a meditation course and start it",
+        "Progress through at least one session",
+        "Choose to restart the course",
+        "Verify the course status resets to 'not started'"
+      ],
+      "expected_result": "The meditation course resets to its initial state, and the user can begin again without incurring additional costs or penalties."
+    },
+    {
+      "test_id": "T_auto_22",
+      "requirement_id": "FR_auto_22",
+      "scenario": "Validating seamless and stable user experience on the meditation app",
+      "steps": [
+        "Launch the meditation app on a supported device",
+        "Navigate through different sections of the app (e.g., meditation sessions, profile, settings)",
+        "Perform various actions (e.g., start a meditation session, pause, resume, go back to home screen)"
+      ],
+      "expected_result": "The app responds quickly to user actions without any noticeable lag or interruptions"
+    },
+    {
+      "test_id": "T_auto_23",
+      "requirement_id": "FR_auto_23",
+      "scenario": "Validating transparent pricing model for subscription options",
+      "steps": [
+        "Launch the app and navigate to the subscription options page",
+        "Review the pricing model and details of paid features"
+      ],
+      "expected_result": "The user can easily understand the costs and benefits of any paid features without feeling pressured to subscribe, with clear and transparent pricing information displayed."
+    },
+    {
+      "test_id": "T_auto_24",
+      "requirement_id": "FR_auto_24",
+      "scenario": "Access to basic features and meditation courses without subscription",
+      "steps": [
+        "Download and install the meditation app",
+        "Sign up for a new account without providing payment information",
+        "Verify access to a basic set of features",
+        "Verify access to a basic set of meditation courses"
+      ],
+      "expected_result": "The user can access a basic set of features and meditation courses without being prompted for payment information or having to subscribe"
+    },
+    {
+      "test_id": "T_auto_25",
+      "requirement_id": "FR_auto_25",
+      "scenario": "User views meditation history across multiple devices",
+      "steps": [
+        "Log in to the application on Device A and perform a few meditation sessions",
+        "Log in to the application on Device B with the same user credentials",
+        "View meditation history on Device A",
+        "View meditation history on Device B"
+      ],
+      "expected_result": "The meditation history and progress displayed on Device A and Device B are identical and up-to-date"
+    },
+    {
+      "test_id": "T_auto_26",
+      "requirement_id": "FR_auto_26",
+      "scenario": "Free account meditation content access",
+      "steps": [
+        "Create a free user account",
+        "Log in to the application with the free account",
+        "Access the meditation content library",
+        "Browse and select a meditation session to play"
+      ],
+      "expected_result": "The user is able to browse and play a selection of meditation sessions without being prompted to subscribe"
+    },
+    {
+      "test_id": "T_auto_27",
+      "requirement_id": "FR_auto_27",
+      "scenario": "New user signs up for a free account and accesses free meditation sessions",
+      "steps": [
+        "Launch the app and navigate to the sign-up page",
+        "Enter new user details and complete the sign-up process",
+        "Verify that the user is logged in and redirected to the homepage"
+      ],
+      "expected_result": "The user has access to a curated selection of free meditation sessions"
+    },
+    {
+      "test_id": "T_auto_28",
+      "requirement_id": "FR_auto_28",
+      "scenario": "Search for meditation content by topic",
+      "steps": [
+        "The user browses to the meditation content library",
+        "The user enters 'women's issues' into the search bar"
+      ],
+      "expected_result": "The user is presented with a list of meditation sessions related to women's issues"
+    },
+    {
+      "test_id": "T_auto_29",
+      "requirement_id": "FR_auto_29",
+      "scenario": "The app recovers from a technical issue on an Android device without crashing or freezing.",
+      "steps": [
+        "Launch the app on an Android device",
+        "Simulate a technical issue (e.g., network loss, invalid input)",
+        "Verify the app does not crash or freeze"
+      ],
+      "expected_result": "The app recovers from the technical issue and continues to function normally without crashing or freezing."
+    },
+    {
+      "test_id": "T_auto_30",
+      "requirement_id": "FR_auto_30",
+      "scenario": "Personalized meditation recommendations for regular users",
+      "steps": [
+        "Launch the app and ensure the user is logged in",
+        "Access the 'Progress and Insights' section",
+        "Verify that the user has been using the app for a while (e.g., multiple sessions logged)",
+        "Retrieve the user's progress and insights data",
+        "Check for personalized recommendations for further practice"
+      ],
+      "expected_result": "The system provides personalized meditation recommendations based on the user's progress and insights"
+    },
+    {
+      "test_id": "T_auto_31",
+      "requirement_id": "FR_auto_31",
+      "scenario": "Validating clear communication of benefits and limitations of free and paid tiers",
+      "steps": [
+        "Launch the app and navigate to the pricing page",
+        "Review the features and benefits of the free and paid tiers",
+        "Compare the features and benefits to ensure clear differences and limitations are highlighted"
+      ],
+      "expected_result": "The user can clearly understand the benefits and limitations of the free and paid tiers, enabling an informed decision about which tier best suits their needs"
+    },
+    {
+      "test_id": "T_auto_32",
+      "requirement_id": "FR_auto_32",
+      "scenario": "User changes subscription plan",
+      "steps": [
+        "Launch the application and log in with valid credentials",
+        "Navigate to account settings",
+        "Select a different subscription plan",
+        "Confirm the plan change"
+      ],
+      "expected_result": "The user's subscription plan is updated successfully without any issues"
     }
   ]
 }

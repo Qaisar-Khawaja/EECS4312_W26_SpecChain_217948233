@@ -1,0 +1,181 @@
+{
+    "personas": [
+      {
+        "id": "P1",
+        "name": "Alex Chen - Frustrated Meditator",
+        "description": "Alex is a regular meditator who relies on a meditation app to maintain their mental well-being. Despite being a loyal user, they've been experiencing severe performance issues with the app, leading to frustration and disappointment.",
+        "derived_from_group": "G1",
+        "goals": [
+          "To have a seamless and reliable meditation experience",
+          "To access a wide range of meditation content without technical issues",
+          "To track their progress and achieve their mental wellness goals"
+        ],
+        "pain_points": [
+          "The app frequently freezes or crashes, disrupting their meditation sessions",
+          "The app takes a long time to load, making it difficult to fit meditation into their busy schedule",
+          "The app's performance issues have made it untrustworthy and unreliable"
+        ],
+        "context": [
+          "Alex uses the app daily, often at the same time each day",
+          "They have tried to troubleshoot issues by restarting the app or their phone, but problems persist",
+          "They are frustrated because they've paid for a premium subscription and expect a better experience"
+        ],
+        "constraints": [
+          "Technical issues with the app are impacting their mental wellness routine",
+          "They have limited time to dedicate to meditation and need a reliable experience",
+          "They are likely to switch to a competitor's app if the issues are not resolved"
+        ],
+        "evidence_reviews": [
+          "67203b3f-d1f5-4491-8ac6-71cfebe9c371",
+          "44398e73-3be3-4a6a-88c5-78772bee39cc",
+          "f456a5e6-3183-4823-bc11-98bfa31a080d",
+          "a96fd52e-1c73-44b5-96c4-a6477ee06424",
+          "b7ee7077-6fb0-4b3e-9559-427f267b3237",
+          "9af97e5a-b5b0-4501-b442-4fd3672c904e",
+          "87d3dbc3-bd21-4f24-a51b-76bd71cdf9a8",
+          "6ab6c6b9-3ea4-4ac3-898f-047ea8f10b30"
+        ]
+      },
+      {
+        "id": "P2",
+        "name": "Samantha Thompson - Frustrated Subscriber",
+        "description": "Samantha is a busy professional who recently subscribed to a content app for relaxation and learning. She has encountered multiple issues with her subscription, including unexpected charges and difficulties with cancellation.",
+        "derived_from_group": "G2",
+        "goals": [
+          "To access the content she needs without any hassle",
+          "To get a clear understanding of her subscription and billing",
+          "To resolve her issues with the support team efficiently"
+        ],
+        "pain_points": [
+          "Unexpected charges despite cancelling her subscription",
+          "Difficulty in getting help from the support team",
+          "Feeling frustrated and helpless due to technical issues and lack of transparency"
+        ],
+        "context": [
+          "Samantha uses her free time to relax and learn new things through content apps",
+          "She values ease of use and transparent billing practices"
+        ],
+        "constraints": [
+          "Limited time to deal with technical issues and support requests",
+          "Frustration with the app's billing system and support team",
+          "Concerns about being charged unexpectedly"
+        ],
+        "evidence_reviews": [
+          "4f7994f6-ebdb-4af8-9790-2f4646a4d96c",
+          "baf3ddcc-f957-4119-bd51-897c72f4c284",
+          "804d49d2-24b2-4787-8209-34d57ee8c395",
+          "a269dad7-20de-44ae-abf6-743266683b0d",
+          "ae1a91e9-5876-4fda-9d6b-f7853aa8e3a6",
+          "f50c9dbb-fdc0-450d-98db-5c9ccf402221",
+          "3ef14c70-09e0-44f0-9e95-f28a9846b2e5",
+          "b14ed884-e13e-4f7c-92b5-2f24d150453f"
+        ]
+      },
+      {
+        "id": "P3",
+        "name": "Lena Kim - Frustrated User",
+        "description": "Lena is a mindfulness enthusiast who struggles with the current state of a meditation app she's been using. Despite finding the content valuable, she often gets frustrated with the app's performance and user interface.",
+        "derived_from_group": "G3",
+        "goals": [
+          "To easily access and navigate meditation content",
+          "To have a smooth and calming user experience",
+          "To find relevant content without feeling overwhelmed"
+        ],
+        "pain_points": [
+          "The app frequently crashes or gets stuck loading",
+          "The user interface is cluttered and difficult to navigate",
+          "Most features are locked behind a paywall",
+          "The app's disorganization causes her to spend too much time searching for content"
+        ],
+        "context": [
+          "Lena uses the app during her daily commute or before bed to relax",
+          "She occasionally tries to use the app at work, but it's not always functional"
+        ],
+        "constraints": [
+          "Limited budget, as she's not willing to pay for features she can't even access",
+          "Short attention span, as she's easily frustrated when the app doesn't work smoothly"
+        ],
+        "evidence_reviews": [
+          "14a7015-152d-47c5-9a31-241961adc4e8",
+          "5f788740-1ae5-437e-bea7-2a83e2e59f9f",
+          "c6401b99-ad02-4f32-85b5-28aa83af42a4",
+          "4e478d1b-9be3-4965-9051-b160cea541bf",
+          "c5dee167-db4d-4c3b-80cb-29011844aba8",
+          "cfe61017-da9a-4982-9710-a482accf7d01",
+          "6b4e0171-46fd-4c97-ad75-292dd8f0975b",
+          "388ea0ac-ab71-469b-8384-ad5691d21601"
+        ]
+      },
+      {
+        "id": "P4",
+        "name": "Maya Jensen - Frustrated Meditator",
+        "description": "Maya is a 28-year-old marketing professional who practices meditation to manage stress. She is frustrated with the limitations of free content and the aggressive subscription model of her current meditation app.",
+        "derived_from_group": "G4",
+        "goals": [
+          "Access a variety of meditation courses and features without being locked behind a paywall",
+          "Reset and restart meditation courses as needed",
+          "Improve her mental health through meditation without incurring significant costs"
+        ],
+        "pain_points": [
+          "Most features and courses are only available with a paid subscription",
+          "The app is laggy and has technical issues",
+          "There is a lack of free trial or basic features for new users",
+          "The app's focus on subscription and monetization detracts from its core purpose of improving mental health"
+        ],
+        "context": [
+          "Maya uses her meditation app on her daily commute",
+          "She has tried several meditation apps but is currently using one that she finds frustrating",
+          "She values flexibility and accessibility in her meditation practice"
+        ],
+        "constraints": [
+          "Limited budget for subscription services",
+          "Frustration with technical issues and poor app performance",
+          "Desire for a more straightforward and affordable meditation experience"
+        ],
+        "evidence_reviews": [
+          "d41382b3-883b-4e6c-a2f7-77a6ff064f77",
+          "0ea8e4e4-25e0-4379-ad65-ceaca580adb0",
+          "c7097473-8653-42d9-977a-1daa250fd8e0",
+          "7cff71d6-1c95-4754-bed5-c5de16ab0e87",
+          "223b24b4-9c9e-44d2-bcae-5718eec9ac7c",
+          "751a97b9-7d80-4320-bfa7-4142d1b4a6d6",
+          "f1cde210-bcc4-4e3a-97c8-59c80a9d12ea",
+          "2ef20d65-69db-4980-a9bd-2293e7dfae2f"
+        ]
+      },
+      {
+        "id": "P5",
+        "name": "Emily Patel - Frustrated Mindfulness Seeker",
+        "description": "Emily is a wellness-oriented individual who has been using a meditation app to manage stress and anxiety. She appreciates the benefits she's received but feels limited by the content and features available without a subscription.",
+        "derived_from_group": "G5",
+        "goals": [
+          "To access a wider variety of meditation content",
+          "To deepen her meditation practice without interruptions",
+          "To explore topics relevant to her life, such as family and women's issues"
+        ],
+        "pain_points": [
+          "Limited access to content without a subscription",
+          "Frustration with having to pay for features she needs",
+          "Difficulty finding content that resonates with her specific interests"
+        ],
+        "context": [
+          "Using the app at home to manage stress and anxiety",
+          "Hoping to find content that speaks to her experiences as a woman and mother"
+        ],
+        "constraints": [
+          "Financial constraints that limit her ability to subscribe",
+          "Technical issues with the app, such as crashing on her Android device"
+        ],
+        "evidence_reviews": [
+          "db628f28-4845-495c-9fe4-58a1d39f9751",
+          "2e777782-fdb3-46bd-8196-12dad5f47bd3",
+          "292f4c70-c8dc-41d8-b47a-ed631408fc93",
+          "1518ff5a-d2b1-4f83-935c-4387100c86c0",
+          "00c82aa4-c8e3-4d6b-950b-dcf1748c3385",
+          "a7ce7ffc-db3b-46ab-a5cb-d0ff6e478fce",
+          "e6dcca37-7a7c-429c-86db-b523eb7a8ba0",
+          "e7061167-3d71-4220-aa7c-f1bb6b1df469"
+        ]
+      }
+    ]
+  }

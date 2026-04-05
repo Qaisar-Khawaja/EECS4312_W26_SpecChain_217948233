@@ -2,30 +2,186 @@
   "personas": [
     {
       "id": "P_hybrid_1",
-      "name": "Frequent Fitness Logger",
-      "description": "A user who depends on the app for regular workout tracking and expects logging to work reliably during or immediately after exercise.",
-      "derived_from_group": "H1",
+      "name": "Alex Chen - Frustrated Meditator",
+      "description": "A regular user who relies on the meditation app for daily mental wellness practice but is experiencing frequent crashes, freezes, and slow loading times that disrupt meditation sessions.",
+      "derived_from_group": "G1",
       "goals": [
-        "Log workouts quickly",
-        "Track activities without interruption"
+        "Complete meditation sessions without technical interruptions",
+        "Access meditation content quickly when needed",
+        "Maintain a consistent daily meditation routine"
       ],
       "pain_points": [
-        "The app crashes while saving workouts",
-        "Previously entered activity data may disappear"
+        "The app crashes or freezes during meditation sessions",
+        "The app takes too long to load, making it difficult to use during limited free time",
+        "Meditations stop unexpectedly in the middle of sessions",
+        "The app has become unreliable despite paying for a subscription"
       ],
       "context": [
-        "Using the app during exercise sessions",
-        "Using the app outdoors or while moving"
+        "Uses the app daily for meditation practice",
+        "Often meditates at the same time each day as part of a routine",
+        "Has been a long-time user but recent updates have degraded performance"
       ],
       "constraints": [
-        "Workout logging must complete without crashing",
-        "Saved workout data must persist"
+        "Limited time available for meditation due to busy schedule",
+        "Needs the app to work reliably to maintain mental wellness routine",
+        "Paying for premium subscription and expects stable performance"
       ],
       "evidence_reviews": [
-        "rev_12",
-        "rev_41"
+        "67203b3f-d1f5-4491-8ac6-71cfebe9c371",
+        "44398e73-3be3-4a6a-88c5-78772bee39cc",
+        "f456a5e6-3183-4823-bc11-98bfa31a080d",
+        "a96fd52e-1c73-44b5-96c4-a6477ee06424",
+        "b7ee7077-6fb0-4b3e-9559-427f267b3237",
+        "9af97e5a-b5b0-4501-b442-4fd3672c904e",
+        "87d3dbc3-bd21-4f24-a51b-76bd71cdf9a8"
       ],
-      "notes": "Refined the persona description and removed an unsupported assumption about synchronization."
+      "notes": "Removed review which was reclassified to G2 (billing issues). Focused description on technical reliability issues. Removed unsupported assumptions about tracking progress and syncing across devices."
+    },
+    {
+      "id": "P_hybrid_2",
+      "name": "Samantha Thompson - Frustrated Subscriber",
+      "description": "A subscriber who is experiencing billing and subscription access problems, including unexpected charges, content locked despite active subscription, and difficulty getting support.",
+      "derived_from_group": "G2",
+      "goals": [
+        "Access subscribed content without technical barriers",
+        "Get clear information about subscription status and billing",
+        "Successfully cancel subscription without further charges if needed"
+      ],
+      "pain_points": [
+        "Content remains locked despite having an active paid subscription",
+        "Charged for subscription despite attempting to cancel",
+        "Support team is unresponsive or unhelpful",
+        "Billing is unclear and subscription status is not accurately reflected"
+      ],
+      "context": [
+        "Recently subscribed or attempted to manage an existing subscription",
+        "Has contacted support about billing or access issues",
+        "Values transparency in billing and subscription management"
+      ],
+      "constraints": [
+        "Limited time to deal with subscription and billing problems",
+        "Frustrated by lack of transparency in billing system",
+        "Concerned about being charged incorrectly or unexpectedly"
+      ],
+      "evidence_reviews": [
+        "4f7994f6-ebdb-4af8-9790-2f4646a4d96c",
+        "baf3ddcc-f957-4119-bd51-897c72f4c284",
+        "a269dad7-20de-44ae-abf6-743266683b0d",
+        "ae1a91e9-5876-4fda-9d6b-f7853aa8e3a6",
+        "f50c9dbb-fdc0-450d-98db-5c9ccf402221",
+        "3ef14c70-09e0-44f0-9e95-f28a9846b2e5",
+        "b14ed884-e13e-4f7c-92b5-2f24d150453f"
+      ],
+      "notes": "Removed non-existent review. Refined to focus specifically on subscription access failures and billing problems rather than general content app usage. Removed vague 'learning and relaxation' context that wasn't supported by review evidence."
+    },
+    {
+      "id": "P_hybrid_3",
+      "name": "Lena Kim - UI-Frustrated User",
+      "description": "A user who finds the app's interface cluttered, difficult to navigate, and unintuitive, making it hard to find desired meditation content efficiently.",
+      "derived_from_group": "G3",
+      "goals": [
+        "Navigate the app easily to find specific meditation content",
+        "Have a clean, organized interface that supports relaxation",
+        "Quickly access meditation sessions without frustration"
+      ],
+      "pain_points": [
+        "The interface is cluttered and disorganized",
+        "Finding specific meditation content takes too long",
+        "Navigation is unintuitive and confusing",
+        "The app design does not support a calming experience"
+      ],
+      "context": [
+        "Uses the app during commute or before bed to relax",
+        "Values simplicity and ease of use in the interface",
+        "Has used the app for some time and noticed it becoming more cluttered"
+      ],
+      "constraints": [
+        "Limited patience when the app is difficult to navigate",
+        "Short time windows for meditation require quick access to content",
+        "Expects a calming, simple user experience from a meditation app"
+      ],
+      "evidence_reviews": [
+        "5f788740-1ae5-437e-bea7-2a83e2e59f9f",
+        "c6401b99-ad02-4f32-85b5-28aa83af42a4",
+        "4e478d1b-9be3-4965-9051-b160cea541bf",
+        "cfe61017-da9a-4982-9710-a482accf7d01",
+        "6b4e0171-46fd-4c97-ad75-292dd8f0975b",
+        "388ea0ac-ab71-469b-8384-ad5691d21601"
+      ],
+      "notes": "Removed invalid review IDs ( malformed and moved one to G5). Removed 'most features locked behind paywall' pain point as those reviews were reclassified to G5. Focused purely on UI/UX navigation issues. Removed unsupported claim about 'limited budget' constraint."
+    },
+    {
+      "id": "P_hybrid_4",
+      "name": "Maya Jensen - Feature-Seeking Meditator",
+      "description": "A user who wants access to specific meditation features like course resets and varied content, but finds the available features limited or poorly implemented.",
+      "derived_from_group": "G4",
+      "goals": [
+        "Access diverse meditation content and courses",
+        "Reset and restart meditation courses when desired",
+        "Explore different meditation topics and approaches"
+      ],
+      "pain_points": [
+        "Cannot reset courses to start over from the beginning",
+        "Limited variety in available meditation content",
+        "App has become cluttered with too much content, making navigation difficult",
+        "New AI features feel like distractions rather than helpful additions"
+      ],
+      "context": [
+        "Has been using the app for some time",
+        "Wants to revisit and repeat favorite courses",
+        "Values quality and variety in meditation content"
+      ],
+      "constraints": [
+        "Needs the ability to manage course progress and restart content",
+        "Wants focused meditation experience without unnecessary features",
+        "Expects content variety to support long-term meditation practice"
+      ],
+      "evidence_reviews": [
+        "d41382b3-883b-4e6c-a2f7-77a6ff064f77",
+        "c7097473-8653-42d9-977a-1daa250fd8e0",
+        "7cff71d6-1c95-4754-bed5-c5de16ab0e87",
+        "223b24b4-9c9e-44d2-bcae-5718eec9ac7c",
+        "751a97b9-7d80-4320-bfa7-4142d1b4a6d6",
+        "f1cde210-bcc4-4e3a-97c8-59c80a9d12ea"
+      ],
+      "notes": "Removed reviews which were reclassified to G5 (paywall issues). Removed 'aggressive subscription model' and 'limited budget' pain points which are not supported by G4 reviews - those belong to G5. Focused on content quality, variety, and feature availability rather than pricing."
+    },
+    {
+      "id": "P_hybrid_5",
+      "name": "Emily Patel - Budget-Conscious User",
+      "description": "A user who wants to use the meditation app but is frustrated by limited free content and the requirement to subscribe for access to most features and sessions.",
+      "derived_from_group": "G5",
+      "goals": [
+        "Access meditation content without requiring a paid subscription",
+        "Try the app's features before committing to payment",
+        "Find meditation sessions relevant to personal interests"
+      ],
+      "pain_points": [
+        "Almost all content is locked behind a paywall",
+        "Very limited free content available to try before subscribing",
+        "Cannot afford or justify subscription costs",
+        "Mental health resources should be more accessible"
+      ],
+      "context": [
+        "Interested in meditation for stress and anxiety management",
+        "Would like to explore topics like family or women's wellness",
+        "Downloaded the app hoping for some free content to start with"
+      ],
+      "constraints": [
+        "Limited budget prevents subscription purchase",
+        "Needs to evaluate app value before paying",
+        "Believes mental health tools should have meaningful free access"
+      ],
+      "evidence_reviews": [
+        "2e777782-fdb3-46bd-8196-12dad5f47bd3",
+        "292f4c70-c8dc-41d8-b47a-ed631408fc93",
+        "1518ff5a-d2b1-4f83-935c-4387100c86c0",
+        "00c82aa4-c8e3-4d6b-950b-dcf1748c3385",
+        "a7ce7ffc-db3b-46ab-a5cb-d0ff6e478fce",
+        "e6dcca37-7a7c-429c-86db-b523eb7a8ba0",
+        "e7061167-3d71-4220-aa7c-f1bb6b1df469"
+      ],
+      "notes": "Removed review which was a positive review about employer benefits. Removed 'technical issues with Android' constraint which is not strongly supported by G5 reviews. Refined focus to specifically address paywall restrictions and limited free access rather than content quality or features."
     }
   ]
 }

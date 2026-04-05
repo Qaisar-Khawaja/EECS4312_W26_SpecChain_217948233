@@ -1,12 +1,161 @@
 {
   "groups": [
     {
-      "group_id": "A1",
-      "theme": "Workout logging issues",
-      "review_ids": ["rev_12", "rev_33", "rev_41", "rev_92"],
+      "group_id": "G1",
+      "theme": "Performance Issues",
+      "review_ids": [
+        "67203b3f-d1f5-4491-8ac6-71cfebe9c371",
+        "44398e73-3be3-4a6a-88c5-78772bee39cc",
+        "f456a5e6-3183-4823-bc11-98bfa31a080d",
+        "a96fd52e-1c73-44b5-96c4-a6477ee06424",
+        "b7ee7077-6fb0-4b3e-9559-427f267b3237",
+        "9af97e5a-b5b0-4501-b442-4fd3672c904e",
+        "87d3dbc3-bd21-4f24-a51b-76bd71cdf9a8",
+        "6ab6c6b9-3ea4-4ac3-898f-047ea8f10b30",
+        "2f1ba17f-2e1f-4d61-b232-5dc0571846c9",
+        "41e4103f-3310-4277-94e4-33490cee7341",
+        "e231be3e-6816-48b8-a113-9cb8419817e9",
+        "31484167-ab78-4a08-b319-ec2b3ed09016",
+        "7ad8dada-a089-4d54-82d8-15b7fc91d9b7",
+        "0df5fb57-3971-40fe-abe6-c1f673a5199e",
+        "5be7a371-da30-46c0-b025-1636a5d3446e",
+        "7789cdc1-abc3-41ca-b0ca-bc0b547a29d0",
+        "fd73e17e-edc0-4389-8013-ed82d2e86d84",
+        "60d2de1d-4e72-4f4f-bbd0-40ec8df81fec",
+        "d7c7ce54-688d-41bb-b348-0ce14c3267af",
+        "0b398939-b4c1-4698-8f1b-5877ee96969d",
+        "bf71eedd-e364-4015-a00a-ad969cb81bf1",
+        "3eeff1d4-1e59-47ff-a14f-d7841c2d4444",
+        "3f1f7bf5-d9c7-472a-aed8-3235bb810f24",
+        "2c35e9a9-bb40-493d-ae5c-62e8b5f61c08",
+        "422ffc82-048c-4497-b023-9d24ab572d6e",
+        "960e5d24-f27c-4d75-9bb0-44f9f1786502",
+        "63016cbe-3deb-4482-8bcd-068f71568a21",
+        "64de2f2f-ad37-4a26-8808-146f8b59d539",
+        "2a660f21-87ce-455d-836c-54e939e46882",
+        "e10dc9d0-76df-4686-b64a-c0e66127e545",
+        "012b6c88-1b0b-4ae4-8ede-e68d27114ddc",
+        "bf7f3350-9f1f-45d8-ad56-3774ce48c445",
+        "89f0a028-fbdc-47bf-bc6e-a9c578a8fa53",
+        "ddb6608f-0564-42ef-b9db-f486126440dc",
+        "401fe859-d8ea-4df0-9bf7-841718cf9869"
+      ],
       "example_reviews": [
-        "The app crashes whenever I try to log a run.",
-        "Logging workouts causes the app to freeze."
+        "serious technical issue app kept freezing",
+        "using app quite time always somewhat buggy inconvenient lately become complete disaster meditation stop silently middle something went wrong message meditating see left waiting finally check phone point longer trust app unusable current state"
+      ]
+    },
+    {
+      "group_id": "G2",
+      "theme": "Subscription & Billing Issues",
+      "review_ids": [
+        "4f7994f6-ebdb-4af8-9790-2f4646a4d96c",
+        "baf3ddcc-f957-4119-bd51-897c72f4c284",
+        "804d49d2-24b2-4787-8209-34d57ee8c395",
+        "a269dad7-20de-44ae-abf6-743266683b0d",
+        "ae1a91e9-5876-4fda-9d6b-f7853aa8e3a6",
+        "f50c9dbb-fdc0-450d-98db-5c9ccf402221",
+        "3ef14c70-09e0-44f0-9e95-f28a9846b2e5",
+        "b14ed884-e13e-4f7c-92b5-2f24d150453f",
+        "164c5a86-0183-4354-b180-73b4fe4b3535",
+        "5e527f5e-a06d-4547-97f0-309b5c84fd36",
+        "71e58ab3-6519-404f-b132-a73c706487df",
+        "7789cdc1-abc3-41ca-b0ca-bc0b547a29d0",
+        "35f23c72-f2c8-42ff-afd9-6e4877261051",
+        "8f2cd3b5-5d8a-4df6-9c0c-80471d63be98",
+        "423f7cac-3afa-4797-9b2b-669baaad38ff",
+        "df44b608-baae-47cc-a948-af3bd5f482ed",
+        "5b05d887-0411-44dd-9a55-18e7aab9fad0",
+        "0189919d-2ac8-4028-b07b-0b92e2ce4627",
+        "c4710a0b-bb52-49ea-92c0-afa18e0fa795",
+        "6cf3729a-539f-4c29-a6b6-92700a76911c",
+        "7508463f-32de-4bb7-b5ca-6ce4909e8931",
+        "ce492cdd-3573-449b-b525-62bb029a450f",
+        "805d7679-10b7-424d-b6e2-bfe7657ae726"
+      ],
+      "example_reviews": [
+        "active subscription content app still locked support team helpful response",
+        "charged yearly subscription advertised website already contacted support waste time fairly unpleasant experience could accept cancellation refund choosing"
+      ]
+    },
+    {
+      "group_id": "G3",
+      "theme": "User Experience and UI",
+      "review_ids": [
+        "14a7015-152d-47c5-9a31-241961adc4e8",
+        "5f788740-1ae5-437e-bea7-2a83e2e59f9f",
+        "c6401b99-ad02-4f32-85b5-28aa83af42a4",
+        "4e478d1b-9be3-4965-9051-b160cea541bf",
+        "c5dee167-db4d-4c3b-80cb-29011844aba8",
+        "cfe61017-da9a-4982-9710-a482accf7d01",
+        "6b4e0171-46fd-4c97-ad75-292dd8f0975b",
+        "388ea0ac-ab71-469b-8384-ad5691d21601",
+        "9c3721bd-2d54-46f4-8261-e332ee6508fa",
+        "3b029a31-ec2a-4cb5-aaef-aea27f093047",
+        "e0839daa-0e42-4aaa-aeb4-b167f257813f",
+        "d917c525-e118-4213-8efb-a7eb980eb5da",
+        "fca54509-de93-4fd1-a94d-5a20a80d560c",
+        "e6b13985-9ec5-4b66-b058-5a8ffe382ce5",
+        "bd71eedd-e364-4015-a00a-ad969cb81bf1",
+        "64de2f2f-ad37-4a26-8808-146f8b59d539",
+        "a94060ad-875a-4f4b-a24f-8dd344dc813d",
+        "c874c1ae-0205-4c02-8ed9-0a725a850519",
+        "925c9b8b-6be2-4e8c-b6b2-cd108375b50f",
+        "c57846c2-9c29-488e-923b-b8f359f7eea9",
+        "96d16386-e252-45e1-8741-7c34e227099c",
+        "1a8643c2-a855-429c-aa14-ecdfac846c85",
+        "c7b6cfe0-14b5-441e-a51f-1b32e9692d14"
+      ],
+      "example_reviews": [
+        "relaxing easy follow"
+      ]
+    },
+    {
+      "group_id": "G4",
+      "theme": "Content & Features",
+      "review_ids": [
+        "d41382b3-883b-4e6c-a2f7-77a6ff064f77",
+        "0ea8e4e4-25e0-4379-ad65-ceaca580adb0",
+        "c7097473-8653-42d9-977a-1daa250fd8e0",
+        "7cff71d6-1c95-4754-bed5-c5de16ab0e87",
+        "223b24b4-9c9e-44d2-bcae-5718eec9ac7c",
+        "751a97b9-7d80-4320-bfa7-4142d1b4a6d6",
+        "f1cde210-bcc4-4e3a-97c8-59c80a9d12ea",
+        "2ef20d65-69db-4980-a9bd-2293e7dfae2f",
+        "7d8b4e91-a8d1-42b5-a123-8ea8a92967d5",
+        "7d8afede-751e-403d-b97d-a3155e441814",
+        "179af448-6815-4bea-9e28-51056d109c94",
+        "c9304faf-5922-48da-93f1-92e3ca7bf6ad",
+        "48a248f5-d0f0-40b8-a19b-10074d7eb803",
+        "1dbe57fd-7d91-4fcc-9261-e3825e00c6d7",
+        "1debfa79-6222-4ebe-8e77-e474eed19935",
+        "1ba33aa4-e3be-427f-b8b4-753e1de48eea",
+        "ad13af4f-e1ad-4bee-85e8-4745c93ba0a4",
+        "cbb4f0cd-c41f-4747-adef-504a21abd2c3"
+      ],
+      "example_reviews": [
+        "great one category",
+        "everything locked behind pay wall even basic meditation"
+      ]
+    },
+    {
+      "group_id": "G5",
+      "theme": "Content and Feature Limitations",
+      "review_ids": [
+        "db628f28-4845-495c-9fe4-58a1d39f9751",
+        "2e777782-fdb3-46bd-8196-12dad5f47bd3",
+        "292f4c70-c8dc-41d8-b47a-ed631408fc93",
+        "1518ff5a-d2b1-4f83-935c-4387100c86c0",
+        "00c82aa4-c8e3-4d6b-950b-dcf1748c3385",
+        "a7ce7ffc-db3b-46ab-a5cb-d0ff6e478fce",
+        "e6dcca37-7a7c-429c-86db-b523eb7a8ba0",
+        "e7061167-3d71-4220-aa7c-f1bb6b1df469",
+        "035db51b-f8f7-444a-ac28-2cba45834c9c",
+        "f1fd6f18-c3a2-4842-9de1-a06ab8faaadb"
+      ],
+      "example_reviews": [
+        "loved app recieved benefit via employer however sign set detail anywhere content get recommended place still like need think turning anymore year ago also need think womens topic hoping get family subscription saw content child unsure",
+        "everything locked subscribe watch"
       ]
     }
   ]
