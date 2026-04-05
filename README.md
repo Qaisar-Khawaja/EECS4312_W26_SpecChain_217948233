@@ -21,9 +21,9 @@ A requirements engineering pipeline comparing manual, automated, and hybrid appr
 - src/ contains executable Python scripts
 - reflection/ contains the final reflection
 - prompts/ conatains Groq prompts used
-- venv/ it is used for eneviornment setup
 
 ## How to Run:
+Make sure to have all the imports needed.
 When running files individually follow the steps:
 
 Step 1: python3 src/ 01_collect_or_import.py
