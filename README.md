@@ -1,6 +1,6 @@
 # EECS4312_W26_SpecChain
 
-## Application: Headspace Meditation App
+## Application: Headspace Meditate Sleep Relax
 A requirements engineering pipeline comparing manual, automated, and hybrid approaches to extracting user requirements from app store reviews.
 
 ## Dataset 
