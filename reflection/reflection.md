@@ -1,4 +1,4 @@
-# Application: [Headspace Meditation App] 
+# Application: [Headspace Meditate Sleep Relax] 
 
 - Most Important Difference Between Pipelines [The automated pipeline generated 32 requirements with broader review coverage (2% of the dataset), while the manual pipeline produced 14 focused requirements from narrower coverage (1% of reviews). But the real difference wasn't quantity, it was evidence quality. The automated pipeline included requirements for features users never mentioned, like progress tracking dashboards (T_auto_4), cross-device syncing (T_auto_5, T_auto_25), and personalized recommendations (T_auto_30). The manual pipeline's 14 requirements, on the other hand, were all grounded in actual user complaints. The hybrid pipeline took the automated output and refined it back down to 14 requirements by removing unsupported features and vague language. It achieved the same focused quality as manual, but with the automated pipeline's broader data coverage.]
 
