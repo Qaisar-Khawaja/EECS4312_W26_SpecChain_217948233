@@ -1,0 +1,52 @@
+{
+  "app_name": "Headspace Mindful Meditation",
+  "package_id": "com.getsomeheadspace.android",
+
+  "collection": {
+    "method": "google_play_scraper (reviews_all)",
+    "language": "en",
+    "country": "us",
+    "sort_order": "newest",
+    "collection_date": "2026-04-02"
+  },
+
+  "dataset_size": {
+    "total_reviews_available": 67655,
+    "total_reviews_saved_raw": 5000,
+    "total_reviews_cleaned": 4526
+  },
+
+  "cleaning_steps": [
+    "removed duplicate reviews",
+    "removed empty reviews",
+    "removed extremely short reviews",
+    "removed punctuation",
+    "removed special characters",
+    "removed emojis",
+    "converted numbers to text",
+    "lowercased all text",
+    "removed extra whitespace",
+    "removed stopwords",
+    "lemmatized tokens"
+  ],
+  
+  "cleaning_decisions": {
+    "duplicate_removal": "Removed exact duplicate reviews based on text content",
+    "empty_removal": "Removed reviews with empty or null text",
+    "short_review_threshold": "Removed reviews shorter than 10 characters",
+    "emoji_removal": "Removed all Unicode emojis",
+    "special_characters": "Removed all non-alphanumeric characters except spaces",
+    "number_handling": "Converted common numbers (0-10) to text, removed others",
+    "case_normalization": "Converted all text to lowercase",
+    "whitespace": "Normalized multiple spaces to single space",
+    "stopwords": "Removed English stop words using NLTK stopwords corpus",
+    "lemmatization": "Applied WordNet lemmatization to all tokens",
+    "minimum_cleaned_length": "Required at least 3 words after cleaning"
+},
+
+"limitations": [
+  "The app had 67,655 total reviews available, but only the first 5,000 were saved as required.",
+  "Some numeric meaning may be lost during number-to-text conversion.",
+  "Emoji and special character removal may slightly alter user sentiment."
+]
+}
